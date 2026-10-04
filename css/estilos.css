@@ -55,10 +55,18 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
 /* ---------- Avisos ---------- */
 .aviso { padding: 8px var(--gutter); font-size: .875rem; text-align: center; }
 .aviso-offline { background: #fff4d6; color: #7a5600; }
-.aviso-preview { background: #e0e7ff; color: #3730a3; }
+.aviso-preview {
+  padding: 10px var(--gutter); font-size: .95rem; color: #1f1300;
+  background: repeating-linear-gradient(-45deg, #f59e0b 0 14px, #fbbf24 14px 28px);
+}
+/* Etiqueta fija para no olvidar que es la vista previa al hacer scroll */
+body.modo-preview::after {
+  content: "VISTA PREVIA · tus clientes aún no ven esto"; position: fixed; left: 12px; bottom: 12px; z-index: 50;
+  padding: 6px 12px; border-radius: 999px; background: #f59e0b; color: #1f1300; font-size: .78rem; font-weight: 700;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .25); pointer-events: none;
+}
 @media (prefers-color-scheme: dark) {
   .aviso-offline { background: #3d3200; color: #ffe08a; }
-  .aviso-preview { background: #23264d; color: #c7d2fe; }
 }
 
 /* ---------- Cabecera ---------- */

@@ -375,7 +375,7 @@
     $('#dlg-editor').close();
     pintarProductos();
     pintarCategorias();
-    toast(edicion && edicion.id ? 'Cambios guardados' : 'Producto creado');
+    toast((edicion && edicion.id ? 'Cambios guardados' : 'Producto creado') + '. Para que tus clientes lo vean, ve a Publicar.');
   }
 
   async function alCerrarEditor() {

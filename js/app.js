@@ -26,7 +26,7 @@
     registrarSW();
     eventos();
     actualizarAvisoOffline();
-    if (PREVIEW) $('#aviso-preview').hidden = false;
+    if (PREVIEW) { $('#aviso-preview').hidden = false; document.body.classList.add('modo-preview'); }
 
     try {
       estado.catalogo = await cargarCatalogo();
