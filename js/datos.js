@@ -112,6 +112,18 @@
     return ruta;
   }
 
+  // ---------- Contraseña del administrador ----------
+  // PBKDF2-SHA256: en config.js solo se guarda el resultado, nunca la clave.
+  const ITERACIONES = 150000;
+  async function hashClave(clave, sal) {
+    if (!(window.crypto && crypto.subtle)) throw new Error('Este navegador no permite verificar la contraseña. Abre la página con https://');
+    const enc = new TextEncoder();
+    const llave = await crypto.subtle.importKey('raw', enc.encode(clave), 'PBKDF2', false, ['deriveBits']);
+    const bits = await crypto.subtle.deriveBits(
+      { name: 'PBKDF2', hash: 'SHA-256', salt: enc.encode(sal), iterations: ITERACIONES }, llave, 256);
+    return [...new Uint8Array(bits)].map(b => b.toString(16).padStart(2, '0')).join('');
+  }
+
   // ---------- Utilidades ----------
   function esc(txt) {
     return String(txt == null ? '' : txt)
@@ -139,6 +151,6 @@
     URL_CATALOGO, idb, normalizar, cargarPublicado,
     cargarBorrador, guardarBorrador, borrarBorrador,
     guardarMedia, obtenerMedia, listarMedia, borrarMedia, resolverMedia,
-    esc, sinAcentos, idYouTube, colorDe, iniciales
+    hashClave, esc, sinAcentos, idYouTube, colorDe, iniciales
   };
 })();

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Crear credenciales</title>
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <style>
+    .login-caja { width: min(520px, 100%); text-align: left; justify-items: stretch; }
+    .login-caja h1, .login-caja > img { justify-self: center; }
+    .resultado { display: grid; gap: 10px; }
+    .resultado pre {
+      margin: 0; padding: 12px; border-radius: 10px; background: var(--fondo); border: 1px solid var(--borde);
+      font-size: .78rem; white-space: pre-wrap; word-break: break-all;
+    }
+    .pasos li { font-size: .9rem; }
+  </style>
+</head>
+<body class="admin">
+  <section class="login">
+    <form id="form" class="login-caja">
+      <img src="icons/icon.svg" alt="" width="56" height="56">
+      <h1>Crear usuario y contraseña del administrador</h1>
+      <p class="nota">Tu contraseña no sale de este dispositivo: aquí solo se calcula una huella cifrada que pegarás en el archivo de configuración.</p>
+      <label>Usuario
+        <input id="usuario" type="text" autocomplete="username" required minlength="3" maxlength="40" pattern="[A-Za-z0-9._@\-]+" title="Letras, números y . _ @ -">
+      </label>
+      <label><span>Contraseña <span class="opcional">(mínimo 8 caracteres)</span></span>
+        <input id="clave" type="password" autocomplete="new-password" required minlength="8">
+      </label>
+      <label>Repite la contraseña
+        <input id="clave2" type="password" autocomplete="new-password" required minlength="8">
+      </label>
+      <p id="error" class="error" role="alert" hidden></p>
+      <button class="btn btn-pri btn-bloque">Generar</button>
+
+      <div id="resultado" class="resultado" hidden>
+        <p><strong>Listo.</strong> Copia estas 3 líneas:</p>
+        <pre id="bloque"></pre>
+        <button type="button" id="copiar" class="btn btn-sec">Copiar</button>
+        <ol class="pasos">
+          <li>En GitHub abre tu repositorio → carpeta <code>js</code> → archivo <code>config.js</code> → ícono del lápiz (Editar).</li>
+          <li>Reemplaza las líneas <code>ADMIN_USUARIO</code>, <code>ADMIN_SAL</code> y <code>ADMIN_CLAVE_HASH</code> por las que copiaste.</li>
+          <li>Pulsa <strong>Commit changes</strong>. En 1–2 minutos la nueva contraseña queda activa.</li>
+        </ol>
+      </div>
+      <a href="admin.html" class="btn-link">← Ir al panel</a>
+    </form>
+  </section>
+
+  <script src="js/config.js"></script>
+  <script src="js/datos.js"></script>
+  <script>
+    (function () {
+      const $ = (s) => document.querySelector(s);
+      $('#form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const err = $('#error');
+        err.hidden = true;
+        if ($('#clave').value !== $('#clave2').value) {
+          err.textContent = 'Las contraseñas no coinciden.';
+          err.hidden = false;
+          return;
+        }
+        const sal = [...crypto.getRandomValues(new Uint8Array(16))].map(b => b.toString(16).padStart(2, '0')).join('');
+        try {
+          const hash = await Datos.hashClave($('#clave').value, sal);
+          $('#bloque').textContent =
+            `  ADMIN_USUARIO: ${JSON.stringify($('#usuario').value.trim())},\n` +
+            `  ADMIN_SAL: '${sal}',\n` +
+            `  ADMIN_CLAVE_HASH: '${hash}',`;
+          $('#resultado').hidden = false;
+          $('#clave').value = $('#clave2').value = '';
+        } catch (ex) {
+          err.textContent = ex.message;
+          err.hidden = false;
+        }
+      });
+      $('#copiar').addEventListener('click', async (e) => {
+        try {
+          await navigator.clipboard.writeText($('#bloque').textContent);
+          e.currentTarget.textContent = '✓ Copiado';
+        } catch (ex) {
+          getSelection().selectAllChildren($('#bloque'));
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

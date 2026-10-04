@@ -48,7 +48,7 @@
       inp.type = ver ? 'text' : 'password';
       e.currentTarget.textContent = ver ? 'Ocultar' : 'Ver';
     });
-    $('#form-login').addEventListener('submit', (e) => {
+    $('#form-login').addEventListener('submit', async (e) => {
       e.preventDefault();
       const err = $('#login-error');
       const intentos = leerIntentos();
@@ -60,7 +60,19 @@
       }
       const u = $('#login-usuario').value.trim();
       const c = $('#login-clave').value;
-      if (u === CONFIG.ADMIN_USUARIO && c === CONFIG.ADMIN_CLAVE) {
+      const btn = e.target.querySelector('[type=submit]');
+      btn.disabled = true;
+      let ok = false;
+      try {
+        ok = u === CONFIG.ADMIN_USUARIO && (await Datos.hashClave(c, CONFIG.ADMIN_SAL)) === CONFIG.ADMIN_CLAVE_HASH;
+      } catch (ex) {
+        err.textContent = ex.message;
+        err.hidden = false;
+        btn.disabled = false;
+        return;
+      }
+      btn.disabled = false;
+      if (ok) {
         localStorage.removeItem('admin-intentos');
         iniciarSesion();
         $('#login-clave').value = '';

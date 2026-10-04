@@ -4,17 +4,17 @@ Catálogo web **sin precios** que funciona **sin conexión**, se puede instalar 
 
 Hecho solo con **HTML, CSS y JavaScript** (sin frameworks ni librerías).
 
-## 1. Poner tu usuario y contraseña de administrador
+## 1. Usuario y contraseña del administrador
 
-Abre [`js/config.js`](js/config.js) y cambia:
+Credenciales de demostración: **admin / cambiar123** (cámbialas antes de entregar).
 
-```js
-ADMIN_USUARIO: 'admin',        // <-- tu usuario
-ADMIN_CLAVE:   'cambiar123',   // <-- tu contraseña
-WHATSAPP:      '573000000000', // <-- número por defecto (también se cambia desde el panel)
-```
+La contraseña **nunca** se escribe en el código: en [`js/config.js`](js/config.js) solo se guarda una huella cifrada (PBKDF2-SHA256 con sal), porque en GitHub Pages el código es público. Para cambiarla:
 
-El panel queda en `https://tu-sitio.com/admin.html` (no aparece enlazado en el catálogo).
+1. Abre `generar-clave.html` en el sitio publicado (o en `localhost`).
+2. Escribe el usuario y la contraseña nuevos → **Generar** → **Copiar**.
+3. Reemplaza en `js/config.js` las líneas `ADMIN_USUARIO`, `ADMIN_SAL` y `ADMIN_CLAVE_HASH` y guarda (en GitHub: lápiz → *Commit changes*).
+
+El panel queda en `https://tu-sitio/admin.html` (no aparece enlazado en el catálogo).
 
 ## 2. Probarlo en tu computador
 
@@ -70,10 +70,20 @@ Los clientes reciben la nueva versión la próxima vez que abran el catálogo co
 
 > Edita siempre desde el **mismo navegador y dispositivo**: el borrador vive ahí. Usa **Descargar solo catalogo.json** como copia de seguridad.
 
-## 5. Dónde publicarlo (gratis, con HTTPS)
+## 5. Publicarlo en GitHub Pages
 
-- **Netlify Drop**: arrastra la carpeta del proyecto a <https://app.netlify.com/drop>. Para actualizar, vuelve a arrastrarla.
-- **GitHub Pages**, **Cloudflare Pages** o cualquier hosting con HTTPS.
+1. En GitHub crea un repositorio **público** vacío (por ejemplo `catalogo`), sin README.
+2. Desde esta carpeta:
+   ```bash
+   git remote add origin https://github.com/USUARIO/catalogo.git
+   git push -u origin main
+   ```
+3. En el repositorio: **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: `main` / `(root)` → Save**.
+4. En 1–2 minutos queda en `https://USUARIO.github.io/catalogo/` (catálogo) y `.../admin.html` (panel).
+
+**Actualizar el catálogo desde GitHub (sin programas):** en el repositorio → **Add file → Upload files** → arrastra las carpetas `data` y `media` que vienen dentro del .zip del panel → **Commit changes**. GitHub reemplaza `data/catalogo.json` y agrega los archivos nuevos. Límite: 25 MB por archivo al subir por la web.
+
+Otras opciones con HTTPS: Netlify Drop (<https://app.netlify.com/drop>), Cloudflare Pages o cualquier hosting.
 
 ## Estructura
 
@@ -84,7 +94,8 @@ manifest.webmanifest  Datos de la app instalable
 sw.js                 Service Worker (offline y caché de imágenes/videos)
 css/estilos.css       Estilos del catálogo (colores de marca en :root)
 css/admin.css         Estilos del panel
-js/config.js          USUARIO, CONTRASEÑA y valores por defecto
+generar-clave.html    Crea la huella de usuario/contraseña para config.js
+js/config.js          Usuario, huella de la contraseña y valores por defecto
 js/datos.js           Carga del catálogo y almacenamiento local (IndexedDB)
 js/app.js             Catálogo, búsqueda, detalle, carrito y WhatsApp
 js/admin.js           Lógica del panel
@@ -96,7 +107,7 @@ icons/                Íconos de la app
 
 ## Notas
 
-- **Seguridad del panel:** como no hay servidor, el usuario y la contraseña están en `js/config.js`, que cualquiera con conocimientos técnicos puede leer. El panel solo edita el borrador del navegador del dueño; **nadie puede cambiar lo que ven los clientes sin subir archivos al hosting**, así que la protección real es la cuenta del hosting. Usa una contraseña que no uses en otro lado. Si en el futuro se necesita edición en línea en tiempo real desde varios dispositivos, el siguiente paso es conectar un backend (por ejemplo Firebase o Supabase).
+- **Seguridad del panel:** como no hay servidor, la verificación de la contraseña ocurre en el navegador. Por eso solo se guarda su huella cifrada; aun así usa una contraseña larga que no uses en otro lado. El panel solo edita el borrador del navegador del dueño: **nadie puede cambiar lo que ven los clientes sin acceso al repositorio de GitHub**, así que la protección real es esa cuenta (actívale la verificación en dos pasos). Si en el futuro se necesita edición en línea en tiempo real desde varios dispositivos, el siguiente paso es conectar un backend (por ejemplo Firebase o Supabase).
 - **Rendimiento con 250+ productos:** los productos se muestran de 24 en 24 mientras se hace scroll, las imágenes cargan de forma diferida y los videos solo se descargan al abrir el producto.
 - **Videos de YouTube:** se pueden usar, pero no funcionan sin conexión. Para uso offline sube el MP4.
 - **Actualizar la app:** si cambias archivos HTML/CSS/JS, los cambios llegan en la siguiente visita. Para forzar la actualización en todos los dispositivos sube `VERSION` en [`sw.js`](sw.js).

@@ -8,7 +8,7 @@
    Si haces cambios grandes a la app (html/css/js), sube VERSION para
    forzar que todos los dispositivos descarguen la nueva versión.
    ============================================================ */
-const VERSION = 'v1';
+const VERSION = 'v2';
 const CACHE_APP = 'catalogo-app-' + VERSION;
 const CACHE_DATOS = 'catalogo-datos-v1';
 const CACHE_MEDIA = 'catalogo-media-v1';   // debe coincidir con js/app.js
@@ -62,8 +62,9 @@ self.addEventListener('fetch', (e) => {
     e.respondWith(redPrimero(req, CACHE_APP, true));
     return;
   }
-  // Datos del catálogo
-  if (mismoOrigen && url.pathname.endsWith('/data/catalogo.json')) {
+  // Datos del catálogo y configuración (para que un cambio de contraseña
+  // o de número aplique de inmediato)
+  if (mismoOrigen && (url.pathname.endsWith('/data/catalogo.json') || url.pathname.endsWith('/js/config.js'))) {
     e.respondWith(redPrimero(req, CACHE_DATOS, false, true));
     return;
   }
@@ -106,7 +107,7 @@ async function redPrimero(req, nombreCache, esPagina, ignorarCacheNavegador) {
     if (res.ok) cache.put(clave(req), res.clone());
     return res;
   } catch (err) {
-    const guardado = await cache.match(clave(req), { ignoreSearch: true })
+    const guardado = await caches.match(clave(req), { ignoreSearch: true })
       || (esPagina && await caches.match(new URL(req.url).pathname.endsWith('admin.html') ? 'admin.html' : 'index.html'));
     if (guardado) return guardado;
     return new Response('Sin conexión', { status: 503, headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
