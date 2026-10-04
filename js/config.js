@@ -8,9 +8,9 @@ window.CONFIG = {
   // Para cambiar usuario/contraseña abre  generar-clave.html  en el sitio,
   // escribe tus datos y pega aquí las 3 líneas que te entrega.
   // (Credenciales de demostración: admin / cambiar123 — cámbialas al entregar)
-  ADMIN_USUARIO: 'admin',
-  ADMIN_SAL: '86d8eee5f6dd12adeee1c8316bcd7717',
-  ADMIN_CLAVE_HASH: '39c3551e471b9a6983c378aab97788ff7492f5aaa01cfb9deb93421fd1d0f865',
+    ADMIN_USUARIO: "Leyder_@Ceron",
+  ADMIN_SAL: '0fd2a715866d7c11caa297f5cda8d470',
+  ADMIN_CLAVE_HASH: '80f3aae8b00b6a94acc962147093a02c135c2db30592eedbbaf619e1568aed18',
 
   // Minutos que dura la sesión del administrador antes de pedir clave otra vez.
   SESION_MINUTOS: 120,
