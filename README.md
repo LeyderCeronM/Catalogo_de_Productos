@@ -47,6 +47,15 @@ Comentario: Entrega en Popayán
 
 **Sin conexión:** después de la primera visita el catálogo abre sin internet. En el menú **⋮** el cliente puede usar **Descargar catálogo** para guardar todas las imágenes (y opcionalmente los videos). Desde el detalle de un producto también puede guardar un video puntual.
 
+### Empleados en zonas sin internet
+
+**Antes de salir (con WiFi):**
+1. Abrir el link del catálogo en Chrome (Android) o Safari (iPhone) e **instalarlo**: botón ⬇ de la cabecera, o menú del navegador → *Agregar a pantalla de inicio*.
+2. Abrir la app instalada → **⋮ → marcar "Incluir videos" → Descargar catálogo** y esperar a que diga *Listo*. Ahí mismo se ve la fecha del catálogo guardado.
+3. Repetir el paso 2 cada vez que el dueño publique productos nuevos (solo descarga lo que falta).
+
+**En campo (sin señal):** abrir la app desde el ícono, mostrar productos y videos al cliente, armar la lista, escribir el nombre del cliente en *Tu nombre* y pulsar **Solicitar cotización por WhatsApp**. Sin señal se abre directamente la app de WhatsApp: el mensaje queda con el relojito 🕓 y **se envía solo cuando vuelva la señal**. Al regresar al catálogo, la app ofrece vaciar la lista para atender al siguiente cliente.
+
 ## 4. Cómo administra el dueño
 
 En `admin.html`, después de ingresar:

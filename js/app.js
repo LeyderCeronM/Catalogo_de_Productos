@@ -201,8 +201,14 @@
         : (imagen ? `<img src="${esc(imagen)}" alt="${esc(p.nombre)}">` : miniatura(p, 'det-img')) + '<p class="nota-media">El video de YouTube necesita conexión a internet.</p>';
     } else if (p.video) {
       const src = await resolver(p.video);
+      const local = /^blob:/.test(src);
+      if (!navigator.onLine && !local && !(await estaEnCache(src))) {
+        cont.innerHTML = (imagen ? `<img src="${esc(imagen)}" alt="${esc(p.nombre)}">` : miniatura(p, 'det-img')) +
+          '<p class="nota-media">Este video no está descargado en este dispositivo. Con internet, descárgalo desde ⋮ → Descargar catálogo.</p>';
+        return;
+      }
       cont.innerHTML = `<video controls playsinline preload="metadata" ${imagen ? `poster="${esc(imagen)}"` : ''} src="${esc(src)}"></video>`;
-      if (!/^blob:/.test(src)) {
+      if (!local) {
         btnGuardar.hidden = false;
         btnGuardar.disabled = false;
         btnGuardar.textContent = (await estaEnCache(src)) ? '✓ Video disponible sin conexión' : 'Guardar video para ver sin conexión';
@@ -326,10 +332,40 @@
     const numero = String(estado.catalogo.ajustes.whatsapp || '').replace(/\D/g, '');
     if (!numero) { toast('El número de WhatsApp del negocio no está configurado.'); return; }
     try { localStorage.setItem('cliente-nombre', $('#cliente-nombre').value.trim()); } catch (e) {}
-    const url = 'https://wa.me/' + numero + '?text=' + encodeURIComponent(mensajeWhatsApp());
-    if (!navigator.onLine) toast('Sin conexión: WhatsApp enviará el mensaje cuando vuelvas a tener internet.');
-    const w = window.open(url, '_blank', 'noopener');
-    if (!w) location.href = url;
+    const texto = encodeURIComponent(mensajeWhatsApp());
+    const movil = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    ofrecerVaciarAlVolver();
+    if (!navigator.onLine && movil) {
+      // Sin señal la página wa.me no carga: se abre la app de WhatsApp directamente.
+      // El mensaje queda con el relojito y WhatsApp lo envía solo cuando vuelva la señal.
+      location.href = `whatsapp://send?phone=${numero}&text=${texto}`;
+      return;
+    }
+    const url = 'https://wa.me/' + numero + '?text=' + texto;
+    const w = window.open(url, '_blank');
+    if (w) w.opener = null;
+    else location.href = url;
+  }
+
+  // Al regresar de WhatsApp, ofrecer limpiar la lista para atender al siguiente cliente
+  function ofrecerVaciarAlVolver() {
+    const alVolver = () => {
+      if (document.visibilityState !== 'visible') return;
+      document.removeEventListener('visibilitychange', alVolver);
+      setTimeout(() => {
+        if (!estado.carrito.length || !confirm('¿Ya enviaste la cotización por WhatsApp?\n\nToca "Aceptar" para vaciar la lista y empezar una nueva.')) return;
+        const ids = estado.carrito.map(i => i.id);
+        estado.carrito = [];
+        guardarCarrito();
+        ids.forEach(refrescarTarjeta);
+        $('#cliente-nombre').value = '';
+        $('#cliente-nota').value = '';
+        try { localStorage.removeItem('cliente-nombre'); } catch (e) {}
+        $('#dlg-carrito').close();
+        toast('Lista vacía. Lista para el siguiente cliente.');
+      }, 400);
+    };
+    document.addEventListener('visibilitychange', alVolver);
   }
 
   // ---------------- Uso sin conexión ----------------
@@ -373,7 +409,7 @@
       if (p.imagen && !/^(data|blob):/.test(p.imagen)) urls.add(p.imagen);
       if (conVideos && p.video && !idYouTube(p.video) && !/^(data|blob):/.test(p.video)) urls.add(p.video);
     }
-    urls.add(Datos.URL_CATALOGO);
+    if (!urls.size) { $('#progreso').hidden = false; $('#progreso-txt').textContent = 'Listo. El catálogo está disponible sin conexión.'; return; }
     const btn = $('#btn-descargar');
     btn.disabled = true;
     $('#progreso').hidden = false;
@@ -389,6 +425,12 @@
   }
 
   async function mostrarEspacio() {
+    if (estado.catalogo) {
+      const f = new Date(estado.catalogo.actualizado);
+      $('#fecha-catalogo').textContent = isNaN(f) ? '' :
+        'Catálogo en este dispositivo: actualizado el ' + f.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'numeric' }) +
+        ' (' + estado.catalogo.productos.length + ' productos).';
+    }
     if (!(navigator.storage && navigator.storage.estimate)) return;
     const { usage, quota } = await navigator.storage.estimate();
     const mb = (b) => (b / 1048576).toFixed(b > 1e8 ? 0 : 1) + ' MB';
