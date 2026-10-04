@@ -56,17 +56,32 @@ En `admin.html`, después de ingresar:
 | **Productos** | Crear, editar, eliminar, ocultar/mostrar y destacar productos. Subir imagen (se reduce automáticamente a 1200 px en WebP) y video (MP4 recomendado, menos de 20 MB) o pegar un enlace (ruta, URL o YouTube). |
 | **Categorías** | Crear, renombrar, ordenar y eliminar categorías. |
 | **Ajustes** | Nombre del negocio, eslogan, número de WhatsApp y saludo del mensaje. Botón para probar WhatsApp. |
-| **Publicar** | Vista previa, descargar el paquete `.zip` para publicar, exportar/importar `catalogo.json` y descartar cambios. |
+| **Publicar** | Publicar en GitHub con un botón, o descargar el paquete `.zip`; exportar/importar `catalogo.json` y descartar cambios. |
 
 ### Publicar los cambios (importante)
 
-Este proyecto es un **sitio estático**: no tiene servidor ni base de datos. Por eso, lo que el dueño edita se guarda automáticamente **en su propio navegador** (IndexedDB), y lo ve al instante con **Vista previa**. Para que los clientes lo vean:
+Este proyecto es un **sitio estático**: no tiene servidor ni base de datos. Lo que el dueño edita se guarda automáticamente **en su propio navegador** (IndexedDB) y lo ve al instante con **Vista previa**. Para que los clientes lo vean, debe **publicar**:
 
-1. Pestaña **Publicar** → **Descargar paquete para publicar (.zip)**.
-2. Descomprime el .zip: trae `data/catalogo.json` y la carpeta `media/` con las imágenes y videos nuevos.
-3. Súbelos al hosting reemplazando `data/catalogo.json` y agregando lo de `media/`.
+#### Opción A — Botón "Publicar ahora en GitHub" (recomendada)
 
-Los clientes reciben la nueva versión la próxima vez que abran el catálogo con internet. El panel muestra “● Tienes cambios sin publicar” hasta que lo publicado coincida con el borrador.
+Se configura **una sola vez por dispositivo**:
+
+1. En GitHub, con la cuenta dueña del repositorio, abre <https://github.com/settings/personal-access-tokens/new> (*Fine-grained token*):
+   - **Token name:** `Catálogo`. **Expiration:** la que prefieras (por ejemplo 1 año; al vencer se crea otro).
+   - **Repository access:** *Only select repositories* → el repositorio del catálogo.
+   - **Permissions → Repository permissions → Contents:** *Read and write*.
+   - **Generate token** y cópialo.
+2. En el panel → **Publicar** → **Conexión con GitHub**: usuario, repositorio, rama (`main`) y el token → **Guardar y probar conexión**. Si el panel está en `usuario.github.io/repositorio`, usuario y repositorio se llenan solos.
+
+Desde ahí, cada vez que quiera publicar: **Publicar → Publicar ahora en GitHub**. El panel sube `data/catalogo.json` y las imágenes/videos nuevos en **un solo commit**, y avisa cuando GitHub Pages ya muestra los cambios (normalmente 1–2 minutos).
+
+El token **solo queda en ese navegador** (nunca en el código ni en el repositorio). Si se pierde el dispositivo, borra el token en GitHub (*Settings → Developer settings → Personal access tokens*); también se puede quitar con **Olvidar token**.
+
+#### Opción B — Manual
+
+**Publicar manualmente → Descargar paquete (.zip)**, descomprímelo y sube las carpetas `data` y `media` al hosting (en GitHub: *Add file → Upload files → Commit changes*).
+
+El panel muestra “● Tienes cambios sin publicar” hasta que lo publicado coincida con el borrador.
 
 > Edita siempre desde el **mismo navegador y dispositivo**: el borrador vive ahí. Usa **Descargar solo catalogo.json** como copia de seguridad.
 
@@ -81,7 +96,7 @@ Los clientes reciben la nueva versión la próxima vez que abran el catálogo co
 3. En el repositorio: **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: `main` / `(root)` → Save**.
 4. En 1–2 minutos queda en `https://USUARIO.github.io/catalogo/` (catálogo) y `.../admin.html` (panel).
 
-**Actualizar el catálogo desde GitHub (sin programas):** en el repositorio → **Add file → Upload files** → arrastra las carpetas `data` y `media` que vienen dentro del .zip del panel → **Commit changes**. GitHub reemplaza `data/catalogo.json` y agrega los archivos nuevos. Límite: 25 MB por archivo al subir por la web.
+Para que el dueño actualice el catálogo, configura en su dispositivo el botón **Publicar ahora en GitHub** (ver sección 4).
 
 Otras opciones con HTTPS: Netlify Drop (<https://app.netlify.com/drop>), Cloudflare Pages o cualquier hosting.
 
@@ -100,6 +115,7 @@ js/datos.js           Carga del catálogo y almacenamiento local (IndexedDB)
 js/app.js             Catálogo, búsqueda, detalle, carrito y WhatsApp
 js/admin.js           Lógica del panel
 js/zip.js             Generador de .zip sin librerías
+js/github.js          Publicación directa en GitHub (un commit por publicación)
 data/catalogo.json    Productos publicados (trae 250 de ejemplo)
 media/img, media/video  Imágenes y videos
 icons/                Íconos de la app

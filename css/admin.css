@@ -105,6 +105,17 @@ label.btn { cursor: pointer; }
 .estadisticas strong { font-size: 1.4rem; }
 .estadisticas span { font-size: .8rem; color: var(--suave); }
 
+/* ---------- Publicar en GitHub ---------- */
+.btn-grande { min-height: 52px; font-size: 1.05rem; }
+.gh-config { border: 1px solid var(--borde); border-radius: 12px; padding: 0 14px; }
+.gh-config summary { cursor: pointer; padding: 12px 0; font-weight: 600; }
+.gh-config[open] summary { border-bottom: 1px solid var(--borde); margin-bottom: 12px; }
+.gh-form { display: grid; gap: 12px; padding-bottom: 14px; }
+.gh-form input { width: 100%; min-height: 44px; padding: 10px 12px; border: 1px solid var(--borde); border-radius: 10px; background: var(--fondo); font-size: 1rem; font-weight: 400; }
+.gh-form label { display: grid; gap: 6px; font-weight: 600; font-size: .9rem; }
+.gh-form small { font-weight: 400; }
+.ok { color: var(--wa); }
+
 /* ---------- Editor ---------- */
 .dlg-editor { width: min(640px, 100%); height: 100%; max-height: 100%; margin: 0 0 0 auto; }
 .dlg-editor form { display: flex; flex-direction: column; height: 100%; }

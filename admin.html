@@ -108,15 +108,50 @@
       <section id="tab-publicar" class="tab" hidden>
         <div class="tarjeta-form">
           <h2>Publicar los cambios</h2>
-          <p>Todo lo que editas aquí se guarda automáticamente en <strong>este dispositivo</strong>. Para que tus clientes vean los cambios:</p>
-          <ol class="pasos">
-            <li>Revisa cómo quedó con <a href="index.html?preview=1" target="_blank">Vista previa</a>.</li>
-            <li>Descarga el <strong>paquete para publicar</strong> (.zip).</li>
-            <li>Descomprímelo y sube su contenido a tu hosting, reemplazando la carpeta <code>data</code> y agregando la carpeta <code>media</code>.</li>
-          </ol>
+          <p>Todo lo que editas aquí se guarda automáticamente en <strong>este dispositivo</strong>. Revisa cómo quedó con <a href="index.html?preview=1" target="_blank">Vista previa</a> y luego publícalo para que lo vean tus clientes.</p>
           <div id="estadisticas" class="estadisticas"></div>
+
+          <button id="btn-gh-publicar" class="btn btn-pri btn-grande">Publicar ahora</button>
+          <div id="gh-progreso" class="progreso" hidden>
+            <div class="barra"><span id="gh-barra"></span></div>
+            <p id="gh-txt" role="status"></p>
+          </div>
+          <p id="gh-estado" class="nota"></p>
+
+          <details id="gh-config" class="gh-config">
+            <summary>Conexión con GitHub</summary>
+            <form id="form-gh" class="gh-form" autocomplete="off">
+              <div class="fila-2">
+                <label>Usuario u organización
+                  <input name="owner" type="text" required placeholder="mi-usuario" spellcheck="false">
+                </label>
+                <label>Repositorio
+                  <input name="repo" type="text" required placeholder="Catalogo_de_Productos" spellcheck="false">
+                </label>
+              </div>
+              <label>Rama
+                <input name="rama" type="text" required value="main" spellcheck="false">
+              </label>
+              <label>Token de acceso
+                <input name="token" type="password" placeholder="github_pat_…" spellcheck="false" autocomplete="off">
+                <small class="nota">Se guarda solo en este dispositivo, nunca en el código. Créalo una vez en
+                  <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub → Fine-grained token</a>:
+                  en <em>Repository access</em> elige <strong>Only select repositories</strong> → este repositorio, y en
+                  <em>Permissions → Contents</em> elige <strong>Read and write</strong>.</small>
+              </label>
+              <div class="fila-botones">
+                <button class="btn btn-sec">Guardar y probar conexión</button>
+                <button type="button" id="btn-gh-olvidar" class="btn btn-sec peligro">Olvidar token</button>
+              </div>
+            </form>
+          </details>
+        </div>
+
+        <div class="tarjeta-form">
+          <h2>Publicar manualmente</h2>
+          <p class="nota">Si no usas la conexión con GitHub: descarga el paquete, descomprímelo y sube las carpetas <code>data</code> y <code>media</code> a tu hosting (en GitHub: <em>Add file → Upload files</em>).</p>
           <div class="fila-botones">
-            <button id="btn-zip" class="btn btn-pri">Descargar paquete para publicar (.zip)</button>
+            <button id="btn-zip" class="btn btn-sec">Descargar paquete (.zip)</button>
             <button id="btn-json" class="btn btn-sec">Descargar solo catalogo.json</button>
           </div>
           <p id="zip-estado" class="nota"></p>
@@ -203,6 +238,7 @@
   <script src="js/config.js"></script>
   <script src="js/datos.js"></script>
   <script src="js/zip.js"></script>
+  <script src="js/github.js"></script>
   <script src="js/admin.js"></script>
 </body>
 </html>

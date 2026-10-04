@@ -8,7 +8,7 @@
    Si haces cambios grandes a la app (html/css/js), sube VERSION para
    forzar que todos los dispositivos descarguen la nueva versión.
    ============================================================ */
-const VERSION = 'v2';
+const VERSION = 'v3';
 const CACHE_APP = 'catalogo-app-' + VERSION;
 const CACHE_DATOS = 'catalogo-datos-v1';
 const CACHE_MEDIA = 'catalogo-media-v1';   // debe coincidir con js/app.js
@@ -25,6 +25,8 @@ const ARCHIVOS_APP = [
   'js/app.js',
   'js/admin.js',
   'js/zip.js',
+  'js/github.js',
+  'generar-clave.html',
   'icons/icon.svg',
   'icons/icon-192.png',
   'icons/icon-512.png',
@@ -104,7 +106,8 @@ async function redPrimero(req, nombreCache, esPagina, ignorarCacheNavegador) {
   const cache = await caches.open(nombreCache);
   try {
     const res = await conTiempoLimite(fetch(req, ignorarCacheNavegador ? { cache: 'no-cache' } : undefined), 6000);
-    if (res.ok) cache.put(clave(req), res.clone());
+    // Datos: una sola copia aunque se pidan con ?v=... ; páginas: con su query (?preview)
+    if (res.ok) cache.put(esPagina ? clave(req) : req.url.split('?')[0], res.clone());
     return res;
   } catch (err) {
     const guardado = await caches.match(clave(req), { ignoreSearch: true })

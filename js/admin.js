@@ -104,6 +104,8 @@
     asegurarCategorias();
     if (!eventosListos) { eventosPanel(); eventosListos = true; }
     pintarTodo();
+    pintarConexion();
+    limpiarMediaPublicada().catch(() => {});
     setInterval(() => { if (!sesionValida()) cerrarSesion(); }, 60000);
   }
 
@@ -476,14 +478,35 @@
   // =========================================================
   // Publicar
   // =========================================================
+  // Archivos subidos desde el panel que todavía no están en el sitio publicado
   async function mediaPendiente() {
     const enIDB = new Set(await Datos.listarMedia());
+    const yaPublicada = new Set(await leerMediaPublicada());
     const usados = new Set();
     for (const p of cat.productos) {
-      if (p.imagen && enIDB.has(p.imagen)) usados.add(p.imagen);
-      if (p.video && enIDB.has(p.video)) usados.add(p.video);
+      for (const r of [p.imagen, p.video]) {
+        if (r && enIDB.has(r) && !yaPublicada.has(r)) usados.add(r);
+      }
     }
     return [...usados];
+  }
+
+  const leerMediaPublicada = async () => (await Datos.idb.get('kv', 'media-publicada').catch(() => null)) || [];
+
+  // Cuando un archivo publicado ya responde desde el sitio, se borra la copia
+  // local para liberar espacio en el dispositivo del administrador.
+  async function limpiarMediaPublicada() {
+    const lista = await leerMediaPublicada();
+    if (!lista.length || !navigator.onLine) return;
+    const quedan = [];
+    for (const ruta of lista) {
+      try {
+        const res = await fetch(ruta, { method: 'HEAD', cache: 'no-store' });
+        if (res.ok) { await Datos.borrarMedia(ruta); continue; }
+      } catch (e) { /* sin conexión: se intenta otro día */ }
+      quedan.push(ruta);
+    }
+    await Datos.idb.set('kv', 'media-publicada', quedan);
   }
 
   async function pintarEstadisticas() {
@@ -540,6 +563,104 @@
       $('#zip-estado').textContent = 'No se pudo crear el paquete: ' + e.message;
     }
     btn.disabled = false;
+  }
+
+  // ---------- Publicar directo en GitHub ----------
+  function pintarConexion() {
+    const c = GitHub.leerConexion();
+    const f = $('#form-gh');
+    f.owner.value = c.owner;
+    f.repo.value = c.repo;
+    f.rama.value = c.rama || 'main';
+    f.token.value = '';
+    f.token.placeholder = c.token ? '•••••••• (guardado en este dispositivo)' : 'github_pat_…';
+    const lista = GitHub.configurada(c);
+    $('#gh-config').open = !lista;
+    $('#btn-gh-publicar').textContent = lista ? 'Publicar ahora en GitHub' : 'Configura la conexión con GitHub para publicar';
+    $('#btn-gh-publicar').disabled = !lista;
+    $('#gh-config summary').textContent = lista
+      ? `Conexión con GitHub: ${c.owner}/${c.repo} (${c.rama}) ✓`
+      : 'Conexión con GitHub (sin configurar)';
+  }
+
+  async function guardarConexionGH(e) {
+    e.preventDefault();
+    const f = e.target;
+    const anterior = GitHub.leerConexion();
+    const c = {
+      owner: f.owner.value.trim(),
+      repo: f.repo.value.trim().replace(/\.git$/, ''),
+      rama: f.rama.value.trim() || 'main',
+      token: f.token.value.trim() || anterior.token
+    };
+    if (!c.token) { toast('Pega el token de acceso de GitHub'); f.token.focus(); return; }
+    const btn = f.querySelector('button:not([type=button])');
+    btn.disabled = true;
+    $('#gh-estado').textContent = 'Probando la conexión…';
+    try {
+      await GitHub.probar(c);
+      GitHub.guardarConexion(c);
+      $('#gh-estado').innerHTML = '<span class="ok">✓ Conexión correcta. Ya puedes publicar.</span>';
+      pintarConexion();
+    } catch (err) {
+      $('#gh-estado').textContent = '✗ ' + err.message;
+    }
+    btn.disabled = false;
+  }
+
+  async function publicarGitHub() {
+    const c = GitHub.leerConexion();
+    if (!GitHub.configurada(c)) { pintarConexion(); return; }
+    if (!navigator.onLine) { toast('Necesitas internet para publicar'); return; }
+    const btn = $('#btn-gh-publicar');
+    btn.disabled = true;
+    $('#gh-progreso').hidden = false;
+    $('#gh-estado').textContent = '';
+    try {
+      const json = jsonParaPublicar();
+      const rutasMedia = await mediaPendiente();
+      const archivos = [{ ruta: 'data/catalogo.json', datos: json }];
+      for (const r of rutasMedia) archivos.push({ ruta: r, datos: await Datos.obtenerMedia(r) });
+      const n = cat.productos.length;
+      const mensaje = `Actualizar catálogo desde el panel (${n} productos` +
+        (rutasMedia.length ? `, ${rutasMedia.length} archivo(s) nuevo(s))` : ')');
+
+      await GitHub.publicar(c, archivos, mensaje, (hechos, total, txt) => {
+        $('#gh-barra').style.width = Math.round(hechos / total * 100) + '%';
+        $('#gh-txt').textContent = `${txt} (${hechos}/${total})`;
+      });
+
+      const publicadas = await leerMediaPublicada();
+      await Datos.idb.set('kv', 'media-publicada', [...new Set([...publicadas, ...rutasMedia])]);
+      publicado = JSON.parse(json);
+      pintarEstado();
+      pintarEstadisticas();
+      $('#gh-txt').textContent = '✓ Publicado en GitHub.';
+      $('#gh-estado').textContent = 'GitHub Pages está actualizando el sitio (suele tardar 1–2 minutos)…';
+      esperarDespliegue(publicado.version);
+    } catch (err) {
+      console.error(err);
+      $('#gh-txt').textContent = '✗ No se pudo publicar.';
+      $('#gh-estado').textContent = err.message;
+      if (err.status === 401 || err.status === 404) $('#gh-config').open = true;
+    }
+    btn.disabled = false;
+  }
+
+  // Consulta el sitio hasta que el catálogo nuevo esté visible (máx. ~5 min)
+  async function esperarDespliegue(version) {
+    for (let i = 0; i < 30; i++) {
+      await new Promise(r => setTimeout(r, 10000));
+      try {
+        const res = await fetch(Datos.URL_CATALOGO + '?v=' + Date.now(), { cache: 'no-store' });
+        if (res.ok && (await res.json()).version >= version) {
+          $('#gh-estado').innerHTML = '<span class="ok">✓ Tus clientes ya ven los cambios.</span>';
+          limpiarMediaPublicada().catch(() => {});
+          return;
+        }
+      } catch (e) { /* seguir esperando */ }
+    }
+    $('#gh-estado').textContent = 'Los cambios están en GitHub; el sitio puede tardar unos minutos más en mostrarlos.';
   }
 
   async function importarJSON(archivo) {
@@ -653,6 +774,14 @@
     });
 
     // Publicar
+    $('#btn-gh-publicar').addEventListener('click', publicarGitHub);
+    $('#form-gh').addEventListener('submit', guardarConexionGH);
+    $('#btn-gh-olvidar').addEventListener('click', () => {
+      if (!confirm('¿Borrar el token de este dispositivo? Tendrás que pegarlo de nuevo para publicar.')) return;
+      GitHub.olvidarToken();
+      pintarConexion();
+      $('#gh-estado').textContent = 'Token borrado de este dispositivo.';
+    });
     $('#btn-zip').addEventListener('click', descargarZip);
     $('#btn-json').addEventListener('click', () => {
       descargar(new Blob([jsonParaPublicar()], { type: 'application/json' }), 'catalogo.json');
