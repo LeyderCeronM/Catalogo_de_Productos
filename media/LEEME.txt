@@ -1,0 +1,4 @@
+Aquí van las imágenes (media/img) y los videos (media/video) del catálogo.
+
+Normalmente no tienes que copiar nada a mano: el panel de administrador
+genera un .zip con la carpeta "media" lista para subir al hosting.

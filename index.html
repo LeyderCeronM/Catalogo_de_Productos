@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Catálogo</title>
+  <meta name="description" content="Catálogo de productos. Arma tu lista y solicita tu cotización por WhatsApp.">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <div id="aviso-preview" class="aviso aviso-preview" hidden>
+    Vista previa del borrador del administrador — los clientes aún no ven estos cambios.
+  </div>
+  <div id="aviso-offline" class="aviso aviso-offline" hidden>
+    Sin conexión — estás viendo el catálogo guardado en tu dispositivo.
+  </div>
+
+  <header class="cabecera">
+    <div class="cabecera-fila">
+      <div class="marca">
+        <img src="icons/icon.svg" alt="" width="36" height="36">
+        <div>
+          <h1 id="nombre-negocio">Catálogo</h1>
+          <p id="eslogan" class="eslogan"></p>
+        </div>
+      </div>
+      <div class="acciones-cabecera">
+        <button id="btn-instalar" class="btn-icono" hidden title="Instalar app" aria-label="Instalar app">
+          <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+        </button>
+        <button id="btn-menu" class="btn-icono" title="Opciones" aria-label="Opciones">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="12" cy="19" r="1.6"/></svg>
+        </button>
+        <button id="btn-carrito" class="btn-carrito" aria-label="Ver mi lista de cotización">
+          <svg viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6.2"/><circle cx="10" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg>
+          <span class="txt-carrito">Cotizar</span>
+          <span id="contador-carrito" class="contador" hidden>0</span>
+        </button>
+      </div>
+    </div>
+    <div class="buscador">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <input id="buscar" type="search" placeholder="Buscar por nombre, referencia o descripción…" autocomplete="off" aria-label="Buscar productos">
+    </div>
+    <nav id="categorias" class="categorias" aria-label="Categorías"></nav>
+  </header>
+
+  <main class="contenido">
+    <p id="resumen" class="resumen" aria-live="polite"></p>
+    <section id="grilla" class="grilla" aria-label="Productos"></section>
+    <div id="centinela" class="centinela"></div>
+    <div id="vacio" class="vacio" hidden>
+      <p>No encontramos productos con esa búsqueda.</p>
+      <button class="btn btn-sec" id="btn-limpiar">Ver todos los productos</button>
+    </div>
+  </main>
+
+  <!-- Detalle de producto -->
+  <dialog id="dlg-producto" class="dlg dlg-producto" aria-labelledby="det-nombre">
+    <button class="btn-cerrar" data-cerrar aria-label="Cerrar">&times;</button>
+    <div class="det-media" id="det-media"></div>
+    <div class="det-info">
+      <p class="det-cat" id="det-cat"></p>
+      <h2 id="det-nombre"></h2>
+      <p class="det-ref" id="det-ref"></p>
+      <div class="det-desc" id="det-desc"></div>
+      <div class="det-acciones">
+        <div class="cantidad" aria-label="Cantidad">
+          <button type="button" data-cant="-1" aria-label="Menos">−</button>
+          <input id="det-cantidad" type="number" min="1" value="1" inputmode="numeric" aria-label="Cantidad">
+          <button type="button" data-cant="1" aria-label="Más">+</button>
+        </div>
+        <button id="det-agregar" class="btn btn-pri">Agregar a cotización</button>
+      </div>
+      <button id="det-guardar-video" class="btn-link" hidden>Guardar video para ver sin conexión</button>
+    </div>
+  </dialog>
+
+  <!-- Carrito / lista de cotización -->
+  <dialog id="dlg-carrito" class="dlg dlg-lateral" aria-labelledby="titulo-carrito">
+    <div class="lateral-cab">
+      <h2 id="titulo-carrito">Mi lista de cotización</h2>
+      <button class="btn-cerrar" data-cerrar aria-label="Cerrar">&times;</button>
+    </div>
+    <div id="carrito-lista" class="carrito-lista"></div>
+    <form id="form-cotizar" class="carrito-pie">
+      <label><span>Tu nombre <span class="opcional">(opcional)</span></span>
+        <input id="cliente-nombre" type="text" autocomplete="name" maxlength="60">
+      </label>
+      <label><span>Comentario <span class="opcional">(opcional)</span></span>
+        <textarea id="cliente-nota" rows="2" maxlength="400" placeholder="Ciudad, forma de entrega, dudas…"></textarea>
+      </label>
+      <button type="submit" id="btn-whatsapp" class="btn btn-wa">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8a11 11 0 0 1-4.3-3.8c-.4-.5-1-1.5-1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.1 1.2z"/></svg>
+        Solicitar cotización por WhatsApp
+      </button>
+      <button type="button" id="btn-vaciar" class="btn-link peligro">Vaciar lista</button>
+    </form>
+  </dialog>
+
+  <!-- Menú de opciones -->
+  <dialog id="dlg-menu" class="dlg dlg-chico" aria-labelledby="titulo-menu">
+    <div class="lateral-cab">
+      <h2 id="titulo-menu">Usar sin conexión</h2>
+      <button class="btn-cerrar" data-cerrar aria-label="Cerrar">&times;</button>
+    </div>
+    <p>Descarga el catálogo en este dispositivo para verlo aunque no tengas internet.</p>
+    <label class="check"><input type="checkbox" id="chk-videos"> Incluir videos (ocupa más espacio)</label>
+    <button id="btn-descargar" class="btn btn-pri">Descargar catálogo</button>
+    <div id="progreso" class="progreso" hidden>
+      <div class="barra"><span id="progreso-barra"></span></div>
+      <p id="progreso-txt"></p>
+    </div>
+    <p id="espacio" class="nota"></p>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/datos.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

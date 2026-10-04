@@ -1,0 +1,3772 @@
+{
+ "version": 1,
+ "actualizado": "2026-10-04T17:04:54.913Z",
+ "ajustes": {
+  "negocio": "Mi Catálogo",
+  "eslogan": "Pide tu cotización por WhatsApp",
+  "whatsapp": "573000000000",
+  "saludo": "Hola, quiero cotizar los siguientes productos:"
+ },
+ "categorias": [
+  "Herramientas",
+  "Electricidad",
+  "Iluminación",
+  "Plomería",
+  "Pinturas",
+  "Jardín",
+  "Seguridad",
+  "Hogar"
+ ],
+ "productos": [
+  {
+   "id": "demo-001",
+   "ref": "HER-1001",
+   "nombre": "Taladro percutor Estándar",
+   "categoria": "Herramientas",
+   "descripcion": "Taladro percutor línea Estándar de la marca Andina, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-002",
+   "ref": "HER-1002",
+   "nombre": "Juego de destornilladores Compacto",
+   "categoria": "Herramientas",
+   "descripcion": "Juego de destornilladores línea Compacto de la marca MaxiPro, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-003",
+   "ref": "HER-1003",
+   "nombre": "Caladora Plus",
+   "categoria": "Herramientas",
+   "descripcion": "Caladora línea Plus de la marca Cauca Tools, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-004",
+   "ref": "HER-1004",
+   "nombre": "Alicate universal Pro",
+   "categoria": "Herramientas",
+   "descripcion": "Alicate universal línea Pro de la marca Delta, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-005",
+   "ref": "ELE-1005",
+   "nombre": "Cable THHN Estándar",
+   "categoria": "Electricidad",
+   "descripcion": "Cable THHN línea Estándar de la marca Tecnoforte, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-006",
+   "ref": "ELE-1006",
+   "nombre": "Breaker termomagnético Compacto",
+   "categoria": "Electricidad",
+   "descripcion": "Breaker termomagnético línea Compacto de la marca Andina, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-007",
+   "ref": "ELE-1007",
+   "nombre": "Tubo conduit Plus",
+   "categoria": "Electricidad",
+   "descripcion": "Tubo conduit línea Plus de la marca MaxiPro, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-008",
+   "ref": "ELE-1008",
+   "nombre": "Regleta multitoma Pro",
+   "categoria": "Electricidad",
+   "descripcion": "Regleta multitoma línea Pro de la marca Cauca Tools, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-009",
+   "ref": "ILU-1009",
+   "nombre": "Bombillo LED Estándar",
+   "categoria": "Iluminación",
+   "descripcion": "Bombillo LED línea Estándar de la marca Volcán, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-010",
+   "ref": "ILU-1010",
+   "nombre": "Tira LED Compacto",
+   "categoria": "Iluminación",
+   "descripcion": "Tira LED línea Compacto de la marca Tecnoforte, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-011",
+   "ref": "ILU-1011",
+   "nombre": "Lámpara solar Plus",
+   "categoria": "Iluminación",
+   "descripcion": "Lámpara solar línea Plus de la marca Andina, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-012",
+   "ref": "ILU-1012",
+   "nombre": "Sensor de movimiento Pro",
+   "categoria": "Iluminación",
+   "descripcion": "Sensor de movimiento línea Pro de la marca MaxiPro, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-013",
+   "ref": "PLO-1013",
+   "nombre": "Llave de paso Estándar",
+   "categoria": "Plomería",
+   "descripcion": "Llave de paso línea Estándar de la marca Delta, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-014",
+   "ref": "PLO-1014",
+   "nombre": "Codo PVC Compacto",
+   "categoria": "Plomería",
+   "descripcion": "Codo PVC línea Compacto de la marca Volcán, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-015",
+   "ref": "PLO-1015",
+   "nombre": "Tanque de agua Plus",
+   "categoria": "Plomería",
+   "descripcion": "Tanque de agua línea Plus de la marca Tecnoforte, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-016",
+   "ref": "PLO-1016",
+   "nombre": "Teflón Pro",
+   "categoria": "Plomería",
+   "descripcion": "Teflón línea Pro de la marca Andina, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-017",
+   "ref": "PIN-1017",
+   "nombre": "Pintura vinilo Estándar",
+   "categoria": "Pinturas",
+   "descripcion": "Pintura vinilo línea Estándar de la marca Cauca Tools, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-018",
+   "ref": "PIN-1018",
+   "nombre": "Brocha profesional Compacto",
+   "categoria": "Pinturas",
+   "descripcion": "Brocha profesional línea Compacto de la marca Delta, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-019",
+   "ref": "PIN-1019",
+   "nombre": "Thinner Plus",
+   "categoria": "Pinturas",
+   "descripcion": "Thinner línea Plus de la marca Volcán, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-020",
+   "ref": "PIN-1020",
+   "nombre": "Bandeja para pintura Pro",
+   "categoria": "Pinturas",
+   "descripcion": "Bandeja para pintura línea Pro de la marca Tecnoforte, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-021",
+   "ref": "JAR-1021",
+   "nombre": "Tijera de podar Estándar",
+   "categoria": "Jardín",
+   "descripcion": "Tijera de podar línea Estándar de la marca MaxiPro, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-022",
+   "ref": "JAR-1022",
+   "nombre": "Aspersor giratorio Compacto",
+   "categoria": "Jardín",
+   "descripcion": "Aspersor giratorio línea Compacto de la marca Cauca Tools, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-023",
+   "ref": "JAR-1023",
+   "nombre": "Abono orgánico Plus",
+   "categoria": "Jardín",
+   "descripcion": "Abono orgánico línea Plus de la marca Delta, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": true
+  },
+  {
+   "id": "demo-024",
+   "ref": "JAR-1024",
+   "nombre": "Fumigadora manual Pro",
+   "categoria": "Jardín",
+   "descripcion": "Fumigadora manual línea Pro de la marca Volcán, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-025",
+   "ref": "SEG-1025",
+   "nombre": "Candado de alta seguridad Estándar",
+   "categoria": "Seguridad",
+   "descripcion": "Candado de alta seguridad línea Estándar de la marca Andina, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-026",
+   "ref": "SEG-1026",
+   "nombre": "Casco de seguridad Compacto",
+   "categoria": "Seguridad",
+   "descripcion": "Casco de seguridad línea Compacto de la marca MaxiPro, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-027",
+   "ref": "SEG-1027",
+   "nombre": "Botas de seguridad Plus",
+   "categoria": "Seguridad",
+   "descripcion": "Botas de seguridad línea Plus de la marca Cauca Tools, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-028",
+   "ref": "SEG-1028",
+   "nombre": "Alarma inalámbrica Pro",
+   "categoria": "Seguridad",
+   "descripcion": "Alarma inalámbrica línea Pro de la marca Delta, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-029",
+   "ref": "HOG-1029",
+   "nombre": "Escalera de aluminio Estándar",
+   "categoria": "Hogar",
+   "descripcion": "Escalera de aluminio línea Estándar de la marca Tecnoforte, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-030",
+   "ref": "HOG-1030",
+   "nombre": "Tendedero plegable Compacto",
+   "categoria": "Hogar",
+   "descripcion": "Tendedero plegable línea Compacto de la marca Andina, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-031",
+   "ref": "HOG-1031",
+   "nombre": "Perchero de pared Plus",
+   "categoria": "Hogar",
+   "descripcion": "Perchero de pared línea Plus de la marca MaxiPro, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-032",
+   "ref": "HOG-1032",
+   "nombre": "Dispensador de jabón Pro",
+   "categoria": "Hogar",
+   "descripcion": "Dispensador de jabón línea Pro de la marca Cauca Tools, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-033",
+   "ref": "HER-1033",
+   "nombre": "Sierra circular Eco",
+   "categoria": "Herramientas",
+   "descripcion": "Sierra circular línea Eco de la marca Cauca Tools, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-034",
+   "ref": "HER-1034",
+   "nombre": "Martillo de uña Mini",
+   "categoria": "Herramientas",
+   "descripcion": "Martillo de uña línea Mini de la marca Delta, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-035",
+   "ref": "HER-1035",
+   "nombre": "Juego de llaves Allen Profesional",
+   "categoria": "Herramientas",
+   "descripcion": "Juego de llaves Allen línea Profesional de la marca Volcán, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-036",
+   "ref": "ELE-1036",
+   "nombre": "Toma doble Eco",
+   "categoria": "Electricidad",
+   "descripcion": "Toma doble línea Eco de la marca Andina, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-037",
+   "ref": "ELE-1037",
+   "nombre": "Multímetro digital Mini",
+   "categoria": "Electricidad",
+   "descripcion": "Multímetro digital línea Mini de la marca MaxiPro, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-038",
+   "ref": "ELE-1038",
+   "nombre": "Cinta aislante Profesional",
+   "categoria": "Electricidad",
+   "descripcion": "Cinta aislante línea Profesional de la marca Cauca Tools, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-039",
+   "ref": "ILU-1039",
+   "nombre": "Reflector LED Eco",
+   "categoria": "Iluminación",
+   "descripcion": "Reflector LED línea Eco de la marca Volcán, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-040",
+   "ref": "ILU-1040",
+   "nombre": "Aplique de pared Mini",
+   "categoria": "Iluminación",
+   "descripcion": "Aplique de pared línea Mini de la marca Tecnoforte, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-041",
+   "ref": "ILU-1041",
+   "nombre": "Plafón LED Profesional",
+   "categoria": "Iluminación",
+   "descripcion": "Plafón LED línea Profesional de la marca Andina, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-042",
+   "ref": "PLO-1042",
+   "nombre": "Tubo PVC Eco",
+   "categoria": "Plomería",
+   "descripcion": "Tubo PVC línea Eco de la marca Cauca Tools, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-043",
+   "ref": "PLO-1043",
+   "nombre": "Ducha eléctrica Mini",
+   "categoria": "Plomería",
+   "descripcion": "Ducha eléctrica línea Mini de la marca Delta, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-044",
+   "ref": "PLO-1044",
+   "nombre": "Manguera de jardín Profesional",
+   "categoria": "Plomería",
+   "descripcion": "Manguera de jardín línea Profesional de la marca Volcán, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-045",
+   "ref": "PIN-1045",
+   "nombre": "Rodillo de felpa Eco",
+   "categoria": "Pinturas",
+   "descripcion": "Rodillo de felpa línea Eco de la marca Andina, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-046",
+   "ref": "PIN-1046",
+   "nombre": "Estuco plástico Mini",
+   "categoria": "Pinturas",
+   "descripcion": "Estuco plástico línea Mini de la marca MaxiPro, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": true
+  },
+  {
+   "id": "demo-047",
+   "ref": "PIN-1047",
+   "nombre": "Pintura en aerosol Profesional",
+   "categoria": "Pinturas",
+   "descripcion": "Pintura en aerosol línea Profesional de la marca Cauca Tools, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-048",
+   "ref": "JAR-1048",
+   "nombre": "Rastrillo metálico Eco",
+   "categoria": "Jardín",
+   "descripcion": "Rastrillo metálico línea Eco de la marca Volcán, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-049",
+   "ref": "JAR-1049",
+   "nombre": "Carretilla Mini",
+   "categoria": "Jardín",
+   "descripcion": "Carretilla línea Mini de la marca Tecnoforte, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-050",
+   "ref": "JAR-1050",
+   "nombre": "Malla sombra Profesional",
+   "categoria": "Jardín",
+   "descripcion": "Malla sombra línea Profesional de la marca Andina, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-051",
+   "ref": "SEG-1051",
+   "nombre": "Cámara WiFi Eco",
+   "categoria": "Seguridad",
+   "descripcion": "Cámara WiFi línea Eco de la marca Cauca Tools, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-052",
+   "ref": "SEG-1052",
+   "nombre": "Gafas de protección Mini",
+   "categoria": "Seguridad",
+   "descripcion": "Gafas de protección línea Mini de la marca Delta, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-053",
+   "ref": "SEG-1053",
+   "nombre": "Chaleco reflectivo Profesional",
+   "categoria": "Seguridad",
+   "descripcion": "Chaleco reflectivo línea Profesional de la marca Volcán, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-054",
+   "ref": "HOG-1054",
+   "nombre": "Repisa flotante Eco",
+   "categoria": "Hogar",
+   "descripcion": "Repisa flotante línea Eco de la marca Andina, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-055",
+   "ref": "HOG-1055",
+   "nombre": "Cortina de baño Mini",
+   "categoria": "Hogar",
+   "descripcion": "Cortina de baño línea Mini de la marca MaxiPro, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-056",
+   "ref": "HOG-1056",
+   "nombre": "Tapete antideslizante Profesional",
+   "categoria": "Hogar",
+   "descripcion": "Tapete antideslizante línea Profesional de la marca Cauca Tools, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-057",
+   "ref": "HER-1057",
+   "nombre": "Pulidora angular Max",
+   "categoria": "Herramientas",
+   "descripcion": "Pulidora angular línea Max de la marca Cauca Tools, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-058",
+   "ref": "HER-1058",
+   "nombre": "Llave inglesa Estándar",
+   "categoria": "Herramientas",
+   "descripcion": "Llave inglesa línea Estándar de la marca Delta, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-059",
+   "ref": "HER-1059",
+   "nombre": "Atornillador inalámbrico Compacto",
+   "categoria": "Herramientas",
+   "descripcion": "Atornillador inalámbrico línea Compacto de la marca Volcán, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-060",
+   "ref": "ELE-1060",
+   "nombre": "Interruptor sencillo Max",
+   "categoria": "Electricidad",
+   "descripcion": "Interruptor sencillo línea Max de la marca Andina, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-061",
+   "ref": "ELE-1061",
+   "nombre": "Extensión eléctrica Estándar",
+   "categoria": "Electricidad",
+   "descripcion": "Extensión eléctrica línea Estándar de la marca MaxiPro, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-062",
+   "ref": "ELE-1062",
+   "nombre": "Caja de paso Compacto",
+   "categoria": "Electricidad",
+   "descripcion": "Caja de paso línea Compacto de la marca Cauca Tools, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-063",
+   "ref": "ILU-1063",
+   "nombre": "Panel LED Max",
+   "categoria": "Iluminación",
+   "descripcion": "Panel LED línea Max de la marca Volcán, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-064",
+   "ref": "ILU-1064",
+   "nombre": "Lámpara colgante Estándar",
+   "categoria": "Iluminación",
+   "descripcion": "Lámpara colgante línea Estándar de la marca Tecnoforte, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-065",
+   "ref": "ILU-1065",
+   "nombre": "Linterna recargable Compacto",
+   "categoria": "Iluminación",
+   "descripcion": "Linterna recargable línea Compacto de la marca Andina, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-066",
+   "ref": "PLO-1066",
+   "nombre": "Grifería de lavamanos Max",
+   "categoria": "Plomería",
+   "descripcion": "Grifería de lavamanos línea Max de la marca Cauca Tools, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-067",
+   "ref": "PLO-1067",
+   "nombre": "Sifón flexible Estándar",
+   "categoria": "Plomería",
+   "descripcion": "Sifón flexible línea Estándar de la marca Delta, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-068",
+   "ref": "PLO-1068",
+   "nombre": "Válvula de bola Compacto",
+   "categoria": "Plomería",
+   "descripcion": "Válvula de bola línea Compacto de la marca Volcán, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-069",
+   "ref": "PIN-1069",
+   "nombre": "Esmalte sintético Max",
+   "categoria": "Pinturas",
+   "descripcion": "Esmalte sintético línea Max de la marca Andina, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": true
+  },
+  {
+   "id": "demo-070",
+   "ref": "PIN-1070",
+   "nombre": "Sellador acrílico Estándar",
+   "categoria": "Pinturas",
+   "descripcion": "Sellador acrílico línea Estándar de la marca MaxiPro, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-071",
+   "ref": "PIN-1071",
+   "nombre": "Impermeabilizante Compacto",
+   "categoria": "Pinturas",
+   "descripcion": "Impermeabilizante línea Compacto de la marca Cauca Tools, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-072",
+   "ref": "JAR-1072",
+   "nombre": "Pala cuadrada Max",
+   "categoria": "Jardín",
+   "descripcion": "Pala cuadrada línea Max de la marca Volcán, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-073",
+   "ref": "JAR-1073",
+   "nombre": "Guadaña a gasolina Estándar",
+   "categoria": "Jardín",
+   "descripcion": "Guadaña a gasolina línea Estándar de la marca Tecnoforte, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-074",
+   "ref": "JAR-1074",
+   "nombre": "Matera plástica Compacto",
+   "categoria": "Jardín",
+   "descripcion": "Matera plástica línea Compacto de la marca Andina, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-075",
+   "ref": "SEG-1075",
+   "nombre": "Cerradura digital Max",
+   "categoria": "Seguridad",
+   "descripcion": "Cerradura digital línea Max de la marca Cauca Tools, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "max"
+   ],
+   "imagen": "",
+   "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-076",
+   "ref": "SEG-1076",
+   "nombre": "Guantes de nitrilo Estándar",
+   "categoria": "Seguridad",
+   "descripcion": "Guantes de nitrilo línea Estándar de la marca Delta, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-077",
+   "ref": "SEG-1077",
+   "nombre": "Extintor ABC Compacto",
+   "categoria": "Seguridad",
+   "descripcion": "Extintor ABC línea Compacto de la marca Volcán, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-078",
+   "ref": "HOG-1078",
+   "nombre": "Organizador plástico Max",
+   "categoria": "Hogar",
+   "descripcion": "Organizador plástico línea Max de la marca Andina, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-079",
+   "ref": "HOG-1079",
+   "nombre": "Caja de herramientas Estándar",
+   "categoria": "Hogar",
+   "descripcion": "Caja de herramientas línea Estándar de la marca MaxiPro, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-080",
+   "ref": "HOG-1080",
+   "nombre": "Juego de ganchos Compacto",
+   "categoria": "Hogar",
+   "descripcion": "Juego de ganchos línea Compacto de la marca Cauca Tools, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-081",
+   "ref": "HER-1081",
+   "nombre": "Taladro percutor Pro",
+   "categoria": "Herramientas",
+   "descripcion": "Taladro percutor línea Pro de la marca Cauca Tools, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-082",
+   "ref": "HER-1082",
+   "nombre": "Juego de destornilladores Premium",
+   "categoria": "Herramientas",
+   "descripcion": "Juego de destornilladores línea Premium de la marca Delta, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "premium"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-083",
+   "ref": "HER-1083",
+   "nombre": "Caladora Eco",
+   "categoria": "Herramientas",
+   "descripcion": "Caladora línea Eco de la marca Volcán, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-084",
+   "ref": "HER-1084",
+   "nombre": "Alicate universal Mini",
+   "categoria": "Herramientas",
+   "descripcion": "Alicate universal línea Mini de la marca Tecnoforte, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-085",
+   "ref": "ELE-1085",
+   "nombre": "Cable THHN Pro",
+   "categoria": "Electricidad",
+   "descripcion": "Cable THHN línea Pro de la marca MaxiPro, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-086",
+   "ref": "ELE-1086",
+   "nombre": "Breaker termomagnético Premium",
+   "categoria": "Electricidad",
+   "descripcion": "Breaker termomagnético línea Premium de la marca Cauca Tools, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "premium"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-087",
+   "ref": "ELE-1087",
+   "nombre": "Tubo conduit Eco",
+   "categoria": "Electricidad",
+   "descripcion": "Tubo conduit línea Eco de la marca Delta, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-088",
+   "ref": "ELE-1088",
+   "nombre": "Regleta multitoma Mini",
+   "categoria": "Electricidad",
+   "descripcion": "Regleta multitoma línea Mini de la marca Volcán, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-089",
+   "ref": "ILU-1089",
+   "nombre": "Bombillo LED Pro",
+   "categoria": "Iluminación",
+   "descripcion": "Bombillo LED línea Pro de la marca Andina, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-090",
+   "ref": "ILU-1090",
+   "nombre": "Tira LED Premium",
+   "categoria": "Iluminación",
+   "descripcion": "Tira LED línea Premium de la marca MaxiPro, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "premium"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-091",
+   "ref": "ILU-1091",
+   "nombre": "Lámpara solar Eco",
+   "categoria": "Iluminación",
+   "descripcion": "Lámpara solar línea Eco de la marca Cauca Tools, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-092",
+   "ref": "ILU-1092",
+   "nombre": "Sensor de movimiento Mini",
+   "categoria": "Iluminación",
+   "descripcion": "Sensor de movimiento línea Mini de la marca Delta, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": true
+  },
+  {
+   "id": "demo-093",
+   "ref": "PLO-1093",
+   "nombre": "Llave de paso Pro",
+   "categoria": "Plomería",
+   "descripcion": "Llave de paso línea Pro de la marca Tecnoforte, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-094",
+   "ref": "PLO-1094",
+   "nombre": "Codo PVC Premium",
+   "categoria": "Plomería",
+   "descripcion": "Codo PVC línea Premium de la marca Andina, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "premium"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-095",
+   "ref": "PLO-1095",
+   "nombre": "Tanque de agua Eco",
+   "categoria": "Plomería",
+   "descripcion": "Tanque de agua línea Eco de la marca MaxiPro, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-096",
+   "ref": "PLO-1096",
+   "nombre": "Teflón Mini",
+   "categoria": "Plomería",
+   "descripcion": "Teflón línea Mini de la marca Cauca Tools, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-097",
+   "ref": "PIN-1097",
+   "nombre": "Pintura vinilo Pro",
+   "categoria": "Pinturas",
+   "descripcion": "Pintura vinilo línea Pro de la marca Volcán, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-098",
+   "ref": "PIN-1098",
+   "nombre": "Brocha profesional Premium",
+   "categoria": "Pinturas",
+   "descripcion": "Brocha profesional línea Premium de la marca Tecnoforte, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "premium"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-099",
+   "ref": "PIN-1099",
+   "nombre": "Thinner Eco",
+   "categoria": "Pinturas",
+   "descripcion": "Thinner línea Eco de la marca Andina, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-100",
+   "ref": "PIN-1100",
+   "nombre": "Bandeja para pintura Mini",
+   "categoria": "Pinturas",
+   "descripcion": "Bandeja para pintura línea Mini de la marca MaxiPro, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-101",
+   "ref": "JAR-1101",
+   "nombre": "Tijera de podar Pro",
+   "categoria": "Jardín",
+   "descripcion": "Tijera de podar línea Pro de la marca Delta, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-102",
+   "ref": "JAR-1102",
+   "nombre": "Aspersor giratorio Premium",
+   "categoria": "Jardín",
+   "descripcion": "Aspersor giratorio línea Premium de la marca Volcán, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "premium"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-103",
+   "ref": "JAR-1103",
+   "nombre": "Abono orgánico Eco",
+   "categoria": "Jardín",
+   "descripcion": "Abono orgánico línea Eco de la marca Tecnoforte, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-104",
+   "ref": "JAR-1104",
+   "nombre": "Fumigadora manual Mini",
+   "categoria": "Jardín",
+   "descripcion": "Fumigadora manual línea Mini de la marca Andina, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-105",
+   "ref": "SEG-1105",
+   "nombre": "Candado de alta seguridad Pro",
+   "categoria": "Seguridad",
+   "descripcion": "Candado de alta seguridad línea Pro de la marca Cauca Tools, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-106",
+   "ref": "SEG-1106",
+   "nombre": "Casco de seguridad Premium",
+   "categoria": "Seguridad",
+   "descripcion": "Casco de seguridad línea Premium de la marca Delta, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "premium"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-107",
+   "ref": "SEG-1107",
+   "nombre": "Botas de seguridad Eco",
+   "categoria": "Seguridad",
+   "descripcion": "Botas de seguridad línea Eco de la marca Volcán, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-108",
+   "ref": "SEG-1108",
+   "nombre": "Alarma inalámbrica Mini",
+   "categoria": "Seguridad",
+   "descripcion": "Alarma inalámbrica línea Mini de la marca Tecnoforte, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-109",
+   "ref": "HOG-1109",
+   "nombre": "Escalera de aluminio Pro",
+   "categoria": "Hogar",
+   "descripcion": "Escalera de aluminio línea Pro de la marca MaxiPro, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-110",
+   "ref": "HOG-1110",
+   "nombre": "Tendedero plegable Premium",
+   "categoria": "Hogar",
+   "descripcion": "Tendedero plegable línea Premium de la marca Cauca Tools, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "premium"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-111",
+   "ref": "HOG-1111",
+   "nombre": "Perchero de pared Eco",
+   "categoria": "Hogar",
+   "descripcion": "Perchero de pared línea Eco de la marca Delta, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-112",
+   "ref": "HOG-1112",
+   "nombre": "Dispensador de jabón Mini",
+   "categoria": "Hogar",
+   "descripcion": "Dispensador de jabón línea Mini de la marca Volcán, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-113",
+   "ref": "HER-1113",
+   "nombre": "Sierra circular Industrial",
+   "categoria": "Herramientas",
+   "descripcion": "Sierra circular línea Industrial de la marca Volcán, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "industrial"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-114",
+   "ref": "HER-1114",
+   "nombre": "Martillo de uña Max",
+   "categoria": "Herramientas",
+   "descripcion": "Martillo de uña línea Max de la marca Tecnoforte, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-115",
+   "ref": "HER-1115",
+   "nombre": "Juego de llaves Allen Estándar",
+   "categoria": "Herramientas",
+   "descripcion": "Juego de llaves Allen línea Estándar de la marca Andina, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": true
+  },
+  {
+   "id": "demo-116",
+   "ref": "ELE-1116",
+   "nombre": "Toma doble Industrial",
+   "categoria": "Electricidad",
+   "descripcion": "Toma doble línea Industrial de la marca Cauca Tools, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "industrial"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-117",
+   "ref": "ELE-1117",
+   "nombre": "Multímetro digital Max",
+   "categoria": "Electricidad",
+   "descripcion": "Multímetro digital línea Max de la marca Delta, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-118",
+   "ref": "ELE-1118",
+   "nombre": "Cinta aislante Estándar",
+   "categoria": "Electricidad",
+   "descripcion": "Cinta aislante línea Estándar de la marca Volcán, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-119",
+   "ref": "ILU-1119",
+   "nombre": "Reflector LED Industrial",
+   "categoria": "Iluminación",
+   "descripcion": "Reflector LED línea Industrial de la marca Andina, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "industrial"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-120",
+   "ref": "ILU-1120",
+   "nombre": "Aplique de pared Max",
+   "categoria": "Iluminación",
+   "descripcion": "Aplique de pared línea Max de la marca MaxiPro, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-121",
+   "ref": "ILU-1121",
+   "nombre": "Plafón LED Estándar",
+   "categoria": "Iluminación",
+   "descripcion": "Plafón LED línea Estándar de la marca Cauca Tools, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-122",
+   "ref": "PLO-1122",
+   "nombre": "Tubo PVC Industrial",
+   "categoria": "Plomería",
+   "descripcion": "Tubo PVC línea Industrial de la marca Volcán, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "industrial"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-123",
+   "ref": "PLO-1123",
+   "nombre": "Ducha eléctrica Max",
+   "categoria": "Plomería",
+   "descripcion": "Ducha eléctrica línea Max de la marca Tecnoforte, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-124",
+   "ref": "PLO-1124",
+   "nombre": "Manguera de jardín Estándar",
+   "categoria": "Plomería",
+   "descripcion": "Manguera de jardín línea Estándar de la marca Andina, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-125",
+   "ref": "PIN-1125",
+   "nombre": "Rodillo de felpa Industrial",
+   "categoria": "Pinturas",
+   "descripcion": "Rodillo de felpa línea Industrial de la marca Cauca Tools, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "industrial"
+   ],
+   "imagen": "",
+   "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-126",
+   "ref": "PIN-1126",
+   "nombre": "Estuco plástico Max",
+   "categoria": "Pinturas",
+   "descripcion": "Estuco plástico línea Max de la marca Delta, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-127",
+   "ref": "PIN-1127",
+   "nombre": "Pintura en aerosol Estándar",
+   "categoria": "Pinturas",
+   "descripcion": "Pintura en aerosol línea Estándar de la marca Volcán, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-128",
+   "ref": "JAR-1128",
+   "nombre": "Rastrillo metálico Industrial",
+   "categoria": "Jardín",
+   "descripcion": "Rastrillo metálico línea Industrial de la marca Andina, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "industrial"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-129",
+   "ref": "JAR-1129",
+   "nombre": "Carretilla Max",
+   "categoria": "Jardín",
+   "descripcion": "Carretilla línea Max de la marca MaxiPro, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-130",
+   "ref": "JAR-1130",
+   "nombre": "Malla sombra Estándar",
+   "categoria": "Jardín",
+   "descripcion": "Malla sombra línea Estándar de la marca Cauca Tools, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-131",
+   "ref": "SEG-1131",
+   "nombre": "Cámara WiFi Industrial",
+   "categoria": "Seguridad",
+   "descripcion": "Cámara WiFi línea Industrial de la marca Volcán, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "industrial"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-132",
+   "ref": "SEG-1132",
+   "nombre": "Gafas de protección Max",
+   "categoria": "Seguridad",
+   "descripcion": "Gafas de protección línea Max de la marca Tecnoforte, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-133",
+   "ref": "SEG-1133",
+   "nombre": "Chaleco reflectivo Estándar",
+   "categoria": "Seguridad",
+   "descripcion": "Chaleco reflectivo línea Estándar de la marca Andina, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-134",
+   "ref": "HOG-1134",
+   "nombre": "Repisa flotante Industrial",
+   "categoria": "Hogar",
+   "descripcion": "Repisa flotante línea Industrial de la marca Cauca Tools, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "industrial"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-135",
+   "ref": "HOG-1135",
+   "nombre": "Cortina de baño Max",
+   "categoria": "Hogar",
+   "descripcion": "Cortina de baño línea Max de la marca Delta, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-136",
+   "ref": "HOG-1136",
+   "nombre": "Tapete antideslizante Estándar",
+   "categoria": "Hogar",
+   "descripcion": "Tapete antideslizante línea Estándar de la marca Volcán, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-137",
+   "ref": "HER-1137",
+   "nombre": "Pulidora angular Plus",
+   "categoria": "Herramientas",
+   "descripcion": "Pulidora angular línea Plus de la marca Volcán, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-138",
+   "ref": "HER-1138",
+   "nombre": "Llave inglesa Pro",
+   "categoria": "Herramientas",
+   "descripcion": "Llave inglesa línea Pro de la marca Tecnoforte, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": true
+  },
+  {
+   "id": "demo-139",
+   "ref": "HER-1139",
+   "nombre": "Atornillador inalámbrico Premium",
+   "categoria": "Herramientas",
+   "descripcion": "Atornillador inalámbrico línea Premium de la marca Andina, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "premium"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-140",
+   "ref": "ELE-1140",
+   "nombre": "Interruptor sencillo Plus",
+   "categoria": "Electricidad",
+   "descripcion": "Interruptor sencillo línea Plus de la marca Cauca Tools, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-141",
+   "ref": "ELE-1141",
+   "nombre": "Extensión eléctrica Pro",
+   "categoria": "Electricidad",
+   "descripcion": "Extensión eléctrica línea Pro de la marca Delta, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-142",
+   "ref": "ELE-1142",
+   "nombre": "Caja de paso Premium",
+   "categoria": "Electricidad",
+   "descripcion": "Caja de paso línea Premium de la marca Volcán, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "premium"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-143",
+   "ref": "ILU-1143",
+   "nombre": "Panel LED Plus",
+   "categoria": "Iluminación",
+   "descripcion": "Panel LED línea Plus de la marca Andina, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-144",
+   "ref": "ILU-1144",
+   "nombre": "Lámpara colgante Pro",
+   "categoria": "Iluminación",
+   "descripcion": "Lámpara colgante línea Pro de la marca MaxiPro, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-145",
+   "ref": "ILU-1145",
+   "nombre": "Linterna recargable Premium",
+   "categoria": "Iluminación",
+   "descripcion": "Linterna recargable línea Premium de la marca Cauca Tools, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "premium"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-146",
+   "ref": "PLO-1146",
+   "nombre": "Grifería de lavamanos Plus",
+   "categoria": "Plomería",
+   "descripcion": "Grifería de lavamanos línea Plus de la marca Volcán, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-147",
+   "ref": "PLO-1147",
+   "nombre": "Sifón flexible Pro",
+   "categoria": "Plomería",
+   "descripcion": "Sifón flexible línea Pro de la marca Tecnoforte, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-148",
+   "ref": "PLO-1148",
+   "nombre": "Válvula de bola Premium",
+   "categoria": "Plomería",
+   "descripcion": "Válvula de bola línea Premium de la marca Andina, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "premium"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-149",
+   "ref": "PIN-1149",
+   "nombre": "Esmalte sintético Plus",
+   "categoria": "Pinturas",
+   "descripcion": "Esmalte sintético línea Plus de la marca Cauca Tools, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-150",
+   "ref": "PIN-1150",
+   "nombre": "Sellador acrílico Pro",
+   "categoria": "Pinturas",
+   "descripcion": "Sellador acrílico línea Pro de la marca Delta, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-151",
+   "ref": "PIN-1151",
+   "nombre": "Impermeabilizante Premium",
+   "categoria": "Pinturas",
+   "descripcion": "Impermeabilizante línea Premium de la marca Volcán, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "premium"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-152",
+   "ref": "JAR-1152",
+   "nombre": "Pala cuadrada Plus",
+   "categoria": "Jardín",
+   "descripcion": "Pala cuadrada línea Plus de la marca Andina, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-153",
+   "ref": "JAR-1153",
+   "nombre": "Guadaña a gasolina Pro",
+   "categoria": "Jardín",
+   "descripcion": "Guadaña a gasolina línea Pro de la marca MaxiPro, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-154",
+   "ref": "JAR-1154",
+   "nombre": "Matera plástica Premium",
+   "categoria": "Jardín",
+   "descripcion": "Matera plástica línea Premium de la marca Cauca Tools, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "premium"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-155",
+   "ref": "SEG-1155",
+   "nombre": "Cerradura digital Plus",
+   "categoria": "Seguridad",
+   "descripcion": "Cerradura digital línea Plus de la marca Volcán, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-156",
+   "ref": "SEG-1156",
+   "nombre": "Guantes de nitrilo Pro",
+   "categoria": "Seguridad",
+   "descripcion": "Guantes de nitrilo línea Pro de la marca Tecnoforte, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-157",
+   "ref": "SEG-1157",
+   "nombre": "Extintor ABC Premium",
+   "categoria": "Seguridad",
+   "descripcion": "Extintor ABC línea Premium de la marca Andina, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "premium"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-158",
+   "ref": "HOG-1158",
+   "nombre": "Organizador plástico Plus",
+   "categoria": "Hogar",
+   "descripcion": "Organizador plástico línea Plus de la marca Cauca Tools, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-159",
+   "ref": "HOG-1159",
+   "nombre": "Caja de herramientas Pro",
+   "categoria": "Hogar",
+   "descripcion": "Caja de herramientas línea Pro de la marca Delta, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-160",
+   "ref": "HOG-1160",
+   "nombre": "Juego de ganchos Premium",
+   "categoria": "Hogar",
+   "descripcion": "Juego de ganchos línea Premium de la marca Volcán, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "premium"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-161",
+   "ref": "HER-1161",
+   "nombre": "Taladro percutor Mini",
+   "categoria": "Herramientas",
+   "descripcion": "Taladro percutor línea Mini de la marca Volcán, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": true
+  },
+  {
+   "id": "demo-162",
+   "ref": "HER-1162",
+   "nombre": "Juego de destornilladores Profesional",
+   "categoria": "Herramientas",
+   "descripcion": "Juego de destornilladores línea Profesional de la marca Tecnoforte, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-163",
+   "ref": "HER-1163",
+   "nombre": "Caladora Industrial",
+   "categoria": "Herramientas",
+   "descripcion": "Caladora línea Industrial de la marca Andina, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "industrial"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-164",
+   "ref": "HER-1164",
+   "nombre": "Alicate universal Max",
+   "categoria": "Herramientas",
+   "descripcion": "Alicate universal línea Max de la marca MaxiPro, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-165",
+   "ref": "ELE-1165",
+   "nombre": "Cable THHN Mini",
+   "categoria": "Electricidad",
+   "descripcion": "Cable THHN línea Mini de la marca Delta, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-166",
+   "ref": "ELE-1166",
+   "nombre": "Breaker termomagnético Profesional",
+   "categoria": "Electricidad",
+   "descripcion": "Breaker termomagnético línea Profesional de la marca Volcán, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-167",
+   "ref": "ELE-1167",
+   "nombre": "Tubo conduit Industrial",
+   "categoria": "Electricidad",
+   "descripcion": "Tubo conduit línea Industrial de la marca Tecnoforte, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "industrial"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-168",
+   "ref": "ELE-1168",
+   "nombre": "Regleta multitoma Max",
+   "categoria": "Electricidad",
+   "descripcion": "Regleta multitoma línea Max de la marca Andina, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-169",
+   "ref": "ILU-1169",
+   "nombre": "Bombillo LED Mini",
+   "categoria": "Iluminación",
+   "descripcion": "Bombillo LED línea Mini de la marca Cauca Tools, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-170",
+   "ref": "ILU-1170",
+   "nombre": "Tira LED Profesional",
+   "categoria": "Iluminación",
+   "descripcion": "Tira LED línea Profesional de la marca Delta, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-171",
+   "ref": "ILU-1171",
+   "nombre": "Lámpara solar Industrial",
+   "categoria": "Iluminación",
+   "descripcion": "Lámpara solar línea Industrial de la marca Volcán, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "industrial"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-172",
+   "ref": "ILU-1172",
+   "nombre": "Sensor de movimiento Max",
+   "categoria": "Iluminación",
+   "descripcion": "Sensor de movimiento línea Max de la marca Tecnoforte, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-173",
+   "ref": "PLO-1173",
+   "nombre": "Llave de paso Mini",
+   "categoria": "Plomería",
+   "descripcion": "Llave de paso línea Mini de la marca MaxiPro, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-174",
+   "ref": "PLO-1174",
+   "nombre": "Codo PVC Profesional",
+   "categoria": "Plomería",
+   "descripcion": "Codo PVC línea Profesional de la marca Cauca Tools, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-175",
+   "ref": "PLO-1175",
+   "nombre": "Tanque de agua Industrial",
+   "categoria": "Plomería",
+   "descripcion": "Tanque de agua línea Industrial de la marca Delta, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "industrial"
+   ],
+   "imagen": "",
+   "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-176",
+   "ref": "PLO-1176",
+   "nombre": "Teflón Max",
+   "categoria": "Plomería",
+   "descripcion": "Teflón línea Max de la marca Volcán, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-177",
+   "ref": "PIN-1177",
+   "nombre": "Pintura vinilo Mini",
+   "categoria": "Pinturas",
+   "descripcion": "Pintura vinilo línea Mini de la marca Andina, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-178",
+   "ref": "PIN-1178",
+   "nombre": "Brocha profesional Profesional",
+   "categoria": "Pinturas",
+   "descripcion": "Brocha profesional línea Profesional de la marca MaxiPro, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-179",
+   "ref": "PIN-1179",
+   "nombre": "Thinner Industrial",
+   "categoria": "Pinturas",
+   "descripcion": "Thinner línea Industrial de la marca Cauca Tools, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "industrial"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-180",
+   "ref": "PIN-1180",
+   "nombre": "Bandeja para pintura Max",
+   "categoria": "Pinturas",
+   "descripcion": "Bandeja para pintura línea Max de la marca Delta, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-181",
+   "ref": "JAR-1181",
+   "nombre": "Tijera de podar Mini",
+   "categoria": "Jardín",
+   "descripcion": "Tijera de podar línea Mini de la marca Tecnoforte, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-182",
+   "ref": "JAR-1182",
+   "nombre": "Aspersor giratorio Profesional",
+   "categoria": "Jardín",
+   "descripcion": "Aspersor giratorio línea Profesional de la marca Andina, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-183",
+   "ref": "JAR-1183",
+   "nombre": "Abono orgánico Industrial",
+   "categoria": "Jardín",
+   "descripcion": "Abono orgánico línea Industrial de la marca MaxiPro, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "industrial"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-184",
+   "ref": "JAR-1184",
+   "nombre": "Fumigadora manual Max",
+   "categoria": "Jardín",
+   "descripcion": "Fumigadora manual línea Max de la marca Cauca Tools, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": true
+  },
+  {
+   "id": "demo-185",
+   "ref": "SEG-1185",
+   "nombre": "Candado de alta seguridad Mini",
+   "categoria": "Seguridad",
+   "descripcion": "Candado de alta seguridad línea Mini de la marca Volcán, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-186",
+   "ref": "SEG-1186",
+   "nombre": "Casco de seguridad Profesional",
+   "categoria": "Seguridad",
+   "descripcion": "Casco de seguridad línea Profesional de la marca Tecnoforte, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-187",
+   "ref": "SEG-1187",
+   "nombre": "Botas de seguridad Industrial",
+   "categoria": "Seguridad",
+   "descripcion": "Botas de seguridad línea Industrial de la marca Andina, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "industrial"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-188",
+   "ref": "SEG-1188",
+   "nombre": "Alarma inalámbrica Max",
+   "categoria": "Seguridad",
+   "descripcion": "Alarma inalámbrica línea Max de la marca MaxiPro, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-189",
+   "ref": "HOG-1189",
+   "nombre": "Escalera de aluminio Mini",
+   "categoria": "Hogar",
+   "descripcion": "Escalera de aluminio línea Mini de la marca Delta, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-190",
+   "ref": "HOG-1190",
+   "nombre": "Tendedero plegable Profesional",
+   "categoria": "Hogar",
+   "descripcion": "Tendedero plegable línea Profesional de la marca Volcán, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-191",
+   "ref": "HOG-1191",
+   "nombre": "Perchero de pared Industrial",
+   "categoria": "Hogar",
+   "descripcion": "Perchero de pared línea Industrial de la marca Tecnoforte, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "industrial"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-192",
+   "ref": "HOG-1192",
+   "nombre": "Dispensador de jabón Max",
+   "categoria": "Hogar",
+   "descripcion": "Dispensador de jabón línea Max de la marca Andina, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-193",
+   "ref": "HER-1193",
+   "nombre": "Sierra circular Compacto",
+   "categoria": "Herramientas",
+   "descripcion": "Sierra circular línea Compacto de la marca Andina, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-194",
+   "ref": "HER-1194",
+   "nombre": "Martillo de uña Plus",
+   "categoria": "Herramientas",
+   "descripcion": "Martillo de uña línea Plus de la marca MaxiPro, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-195",
+   "ref": "HER-1195",
+   "nombre": "Juego de llaves Allen Pro",
+   "categoria": "Herramientas",
+   "descripcion": "Juego de llaves Allen línea Pro de la marca Cauca Tools, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-196",
+   "ref": "ELE-1196",
+   "nombre": "Toma doble Compacto",
+   "categoria": "Electricidad",
+   "descripcion": "Toma doble línea Compacto de la marca Volcán, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-197",
+   "ref": "ELE-1197",
+   "nombre": "Multímetro digital Plus",
+   "categoria": "Electricidad",
+   "descripcion": "Multímetro digital línea Plus de la marca Tecnoforte, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-198",
+   "ref": "ELE-1198",
+   "nombre": "Cinta aislante Pro",
+   "categoria": "Electricidad",
+   "descripcion": "Cinta aislante línea Pro de la marca Andina, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-199",
+   "ref": "ILU-1199",
+   "nombre": "Reflector LED Compacto",
+   "categoria": "Iluminación",
+   "descripcion": "Reflector LED línea Compacto de la marca Cauca Tools, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-200",
+   "ref": "ILU-1200",
+   "nombre": "Aplique de pared Plus",
+   "categoria": "Iluminación",
+   "descripcion": "Aplique de pared línea Plus de la marca Delta, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-201",
+   "ref": "ILU-1201",
+   "nombre": "Plafón LED Pro",
+   "categoria": "Iluminación",
+   "descripcion": "Plafón LED línea Pro de la marca Volcán, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-202",
+   "ref": "PLO-1202",
+   "nombre": "Tubo PVC Compacto",
+   "categoria": "Plomería",
+   "descripcion": "Tubo PVC línea Compacto de la marca Andina, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-203",
+   "ref": "PLO-1203",
+   "nombre": "Ducha eléctrica Plus",
+   "categoria": "Plomería",
+   "descripcion": "Ducha eléctrica línea Plus de la marca MaxiPro, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-204",
+   "ref": "PLO-1204",
+   "nombre": "Manguera de jardín Pro",
+   "categoria": "Plomería",
+   "descripcion": "Manguera de jardín línea Pro de la marca Cauca Tools, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-205",
+   "ref": "PIN-1205",
+   "nombre": "Rodillo de felpa Compacto",
+   "categoria": "Pinturas",
+   "descripcion": "Rodillo de felpa línea Compacto de la marca Volcán, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-206",
+   "ref": "PIN-1206",
+   "nombre": "Estuco plástico Plus",
+   "categoria": "Pinturas",
+   "descripcion": "Estuco plástico línea Plus de la marca Tecnoforte, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-207",
+   "ref": "PIN-1207",
+   "nombre": "Pintura en aerosol Pro",
+   "categoria": "Pinturas",
+   "descripcion": "Pintura en aerosol línea Pro de la marca Andina, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": true
+  },
+  {
+   "id": "demo-208",
+   "ref": "JAR-1208",
+   "nombre": "Rastrillo metálico Compacto",
+   "categoria": "Jardín",
+   "descripcion": "Rastrillo metálico línea Compacto de la marca Cauca Tools, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-209",
+   "ref": "JAR-1209",
+   "nombre": "Carretilla Plus",
+   "categoria": "Jardín",
+   "descripcion": "Carretilla línea Plus de la marca Delta, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-210",
+   "ref": "JAR-1210",
+   "nombre": "Malla sombra Pro",
+   "categoria": "Jardín",
+   "descripcion": "Malla sombra línea Pro de la marca Volcán, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-211",
+   "ref": "SEG-1211",
+   "nombre": "Cámara WiFi Compacto",
+   "categoria": "Seguridad",
+   "descripcion": "Cámara WiFi línea Compacto de la marca Andina, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-212",
+   "ref": "SEG-1212",
+   "nombre": "Gafas de protección Plus",
+   "categoria": "Seguridad",
+   "descripcion": "Gafas de protección línea Plus de la marca MaxiPro, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-213",
+   "ref": "SEG-1213",
+   "nombre": "Chaleco reflectivo Pro",
+   "categoria": "Seguridad",
+   "descripcion": "Chaleco reflectivo línea Pro de la marca Cauca Tools, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-214",
+   "ref": "HOG-1214",
+   "nombre": "Repisa flotante Compacto",
+   "categoria": "Hogar",
+   "descripcion": "Repisa flotante línea Compacto de la marca Volcán, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-215",
+   "ref": "HOG-1215",
+   "nombre": "Cortina de baño Plus",
+   "categoria": "Hogar",
+   "descripcion": "Cortina de baño línea Plus de la marca Tecnoforte, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-216",
+   "ref": "HOG-1216",
+   "nombre": "Tapete antideslizante Pro",
+   "categoria": "Hogar",
+   "descripcion": "Tapete antideslizante línea Pro de la marca Andina, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "pro"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-217",
+   "ref": "HER-1217",
+   "nombre": "Pulidora angular Eco",
+   "categoria": "Herramientas",
+   "descripcion": "Pulidora angular línea Eco de la marca Andina, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-218",
+   "ref": "HER-1218",
+   "nombre": "Llave inglesa Mini",
+   "categoria": "Herramientas",
+   "descripcion": "Llave inglesa línea Mini de la marca MaxiPro, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-219",
+   "ref": "HER-1219",
+   "nombre": "Atornillador inalámbrico Profesional",
+   "categoria": "Herramientas",
+   "descripcion": "Atornillador inalámbrico línea Profesional de la marca Cauca Tools, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-220",
+   "ref": "ELE-1220",
+   "nombre": "Interruptor sencillo Eco",
+   "categoria": "Electricidad",
+   "descripcion": "Interruptor sencillo línea Eco de la marca Volcán, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-221",
+   "ref": "ELE-1221",
+   "nombre": "Extensión eléctrica Mini",
+   "categoria": "Electricidad",
+   "descripcion": "Extensión eléctrica línea Mini de la marca Tecnoforte, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-222",
+   "ref": "ELE-1222",
+   "nombre": "Caja de paso Profesional",
+   "categoria": "Electricidad",
+   "descripcion": "Caja de paso línea Profesional de la marca Andina, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-223",
+   "ref": "ILU-1223",
+   "nombre": "Panel LED Eco",
+   "categoria": "Iluminación",
+   "descripcion": "Panel LED línea Eco de la marca Cauca Tools, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-224",
+   "ref": "ILU-1224",
+   "nombre": "Lámpara colgante Mini",
+   "categoria": "Iluminación",
+   "descripcion": "Lámpara colgante línea Mini de la marca Delta, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-225",
+   "ref": "ILU-1225",
+   "nombre": "Linterna recargable Profesional",
+   "categoria": "Iluminación",
+   "descripcion": "Linterna recargable línea Profesional de la marca Volcán, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-226",
+   "ref": "PLO-1226",
+   "nombre": "Grifería de lavamanos Eco",
+   "categoria": "Plomería",
+   "descripcion": "Grifería de lavamanos línea Eco de la marca Andina, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-227",
+   "ref": "PLO-1227",
+   "nombre": "Sifón flexible Mini",
+   "categoria": "Plomería",
+   "descripcion": "Sifón flexible línea Mini de la marca MaxiPro, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-228",
+   "ref": "PLO-1228",
+   "nombre": "Válvula de bola Profesional",
+   "categoria": "Plomería",
+   "descripcion": "Válvula de bola línea Profesional de la marca Cauca Tools, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-229",
+   "ref": "PIN-1229",
+   "nombre": "Esmalte sintético Eco",
+   "categoria": "Pinturas",
+   "descripcion": "Esmalte sintético línea Eco de la marca Volcán, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-230",
+   "ref": "PIN-1230",
+   "nombre": "Sellador acrílico Mini",
+   "categoria": "Pinturas",
+   "descripcion": "Sellador acrílico línea Mini de la marca Tecnoforte, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": true
+  },
+  {
+   "id": "demo-231",
+   "ref": "PIN-1231",
+   "nombre": "Impermeabilizante Profesional",
+   "categoria": "Pinturas",
+   "descripcion": "Impermeabilizante línea Profesional de la marca Andina, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-232",
+   "ref": "JAR-1232",
+   "nombre": "Pala cuadrada Eco",
+   "categoria": "Jardín",
+   "descripcion": "Pala cuadrada línea Eco de la marca Cauca Tools, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-233",
+   "ref": "JAR-1233",
+   "nombre": "Guadaña a gasolina Mini",
+   "categoria": "Jardín",
+   "descripcion": "Guadaña a gasolina línea Mini de la marca Delta, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-234",
+   "ref": "JAR-1234",
+   "nombre": "Matera plástica Profesional",
+   "categoria": "Jardín",
+   "descripcion": "Matera plástica línea Profesional de la marca Volcán, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-235",
+   "ref": "SEG-1235",
+   "nombre": "Cerradura digital Eco",
+   "categoria": "Seguridad",
+   "descripcion": "Cerradura digital línea Eco de la marca Andina, ideal para proyectos de remodelación.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-236",
+   "ref": "SEG-1236",
+   "nombre": "Guantes de nitrilo Mini",
+   "categoria": "Seguridad",
+   "descripcion": "Guantes de nitrilo línea Mini de la marca MaxiPro, ideal para uso doméstico.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-237",
+   "ref": "SEG-1237",
+   "nombre": "Extintor ABC Profesional",
+   "categoria": "Seguridad",
+   "descripcion": "Extintor ABC línea Profesional de la marca Cauca Tools, ideal para obras y construcción.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-238",
+   "ref": "HOG-1238",
+   "nombre": "Organizador plástico Eco",
+   "categoria": "Hogar",
+   "descripcion": "Organizador plástico línea Eco de la marca Volcán, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "eco"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-239",
+   "ref": "HOG-1239",
+   "nombre": "Caja de herramientas Mini",
+   "categoria": "Hogar",
+   "descripcion": "Caja de herramientas línea Mini de la marca Tecnoforte, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "mini"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-240",
+   "ref": "HOG-1240",
+   "nombre": "Juego de ganchos Profesional",
+   "categoria": "Hogar",
+   "descripcion": "Juego de ganchos línea Profesional de la marca Andina, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "profesional"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-241",
+   "ref": "HER-1241",
+   "nombre": "Taladro percutor Max",
+   "categoria": "Herramientas",
+   "descripcion": "Taladro percutor línea Max de la marca Andina, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-242",
+   "ref": "HER-1242",
+   "nombre": "Juego de destornilladores Estándar",
+   "categoria": "Herramientas",
+   "descripcion": "Juego de destornilladores línea Estándar de la marca MaxiPro, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-243",
+   "ref": "HER-1243",
+   "nombre": "Caladora Compacto",
+   "categoria": "Herramientas",
+   "descripcion": "Caladora línea Compacto de la marca Cauca Tools, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-244",
+   "ref": "HER-1244",
+   "nombre": "Alicate universal Plus",
+   "categoria": "Herramientas",
+   "descripcion": "Alicate universal línea Plus de la marca Delta, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "delta",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-245",
+   "ref": "ELE-1245",
+   "nombre": "Cable THHN Max",
+   "categoria": "Electricidad",
+   "descripcion": "Cable THHN línea Max de la marca Tecnoforte, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-246",
+   "ref": "ELE-1246",
+   "nombre": "Breaker termomagnético Estándar",
+   "categoria": "Electricidad",
+   "descripcion": "Breaker termomagnético línea Estándar de la marca Andina, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "andina",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-247",
+   "ref": "ELE-1247",
+   "nombre": "Tubo conduit Compacto",
+   "categoria": "Electricidad",
+   "descripcion": "Tubo conduit línea Compacto de la marca MaxiPro, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "maxipro",
+    "compacto"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-248",
+   "ref": "ELE-1248",
+   "nombre": "Regleta multitoma Plus",
+   "categoria": "Electricidad",
+   "descripcion": "Regleta multitoma línea Plus de la marca Cauca Tools, ideal para instalaciones residenciales.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "cauca tools",
+    "plus"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-249",
+   "ref": "ILU-1249",
+   "nombre": "Bombillo LED Max",
+   "categoria": "Iluminación",
+   "descripcion": "Bombillo LED línea Max de la marca Volcán, ideal para mantenimiento diario.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "volcán",
+    "max"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
+  {
+   "id": "demo-250",
+   "ref": "ILU-1250",
+   "nombre": "Tira LED Estándar",
+   "categoria": "Iluminación",
+   "descripcion": "Tira LED línea Estándar de la marca Tecnoforte, ideal para trabajo pesado.\n\n• Materiales resistentes y de larga duración.\n• Garantía de fábrica.\n• Disponible para entrega inmediata (consultar existencias).\n\nProducto de ejemplo: reemplázalo desde el panel de administrador.",
+   "etiquetas": [
+    "tecnoforte",
+    "estándar"
+   ],
+   "imagen": "",
+   "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+   "visible": true,
+   "destacado": false
+  }
+ ]
+}
