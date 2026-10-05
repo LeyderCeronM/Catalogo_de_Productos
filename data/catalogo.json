@@ -1,6 +1,6 @@
 {
- "version": 2,
- "actualizado": "2026-10-05T01:14:00.077Z",
+ "version": 3,
+ "actualizado": "2026-10-05T01:25:50.040Z",
  "ajustes": {
   "negocio": "Mi Catálogo",
   "whatsapp": "573000000000",
@@ -18,6 +18,20 @@
   "Hogar"
  ],
  "productos": [
+  {
+   "id": "pmuukislheaga",
+   "nombre": "maquina park",
+   "ref": "Her-10013",
+   "categoria": "Herramientas",
+   "descripcion": "maquina para realizar cortes perfectos",
+   "etiquetas": [
+    "cortador"
+   ],
+   "imagen": "",
+   "video": "",
+   "visible": true,
+   "destacado": false
+  },
   {
    "id": "pmuu7kxf75m4n",
    "nombre": "Barra Loca",
