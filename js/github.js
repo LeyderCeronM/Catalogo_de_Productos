@@ -128,9 +128,13 @@
     }
   }
 
-  // Dirección pública del sitio en GitHub Pages (https://usuario.github.io/repositorio/)
+  // Dirección pública del sitio. Si el panel está abierto en el sitio publicado
+  // (usuario.github.io o un dominio propio) es esa misma dirección; si se usa
+  // desde el computador (localhost), se deduce: https://usuario.github.io/repositorio/
   function urlSitio(c) {
-    if (location.hostname.endsWith('.github.io')) return new URL('.', location.href).href;
+    const h = location.hostname;
+    const local = location.protocol === 'file:' || h === 'localhost' || h === '127.0.0.1' || h === '[::1]' || h.endsWith('.localhost');
+    if (!local) return new URL('.', location.href).href;
     const usuario = c.owner.toLowerCase();
     const raiz = c.repo.toLowerCase() === usuario + '.github.io';
     return `https://${usuario}.github.io/${raiz ? '' : encodeURIComponent(c.repo) + '/'}`;

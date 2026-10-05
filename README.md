@@ -295,7 +295,29 @@ El archivo `.nojekyll` hace que GitHub publique los archivos tal cual. Todas las
 5. Propiedad del sitio: **transfiere el repositorio** a la cuenta de GitHub del cliente (*Settings → General → Danger Zone → Transfer ownership*). Así el enlace pasa a `https://CLIENTE.github.io/REPOSITORIO/`. La otra opción es mantenerlo en tu cuenta como servicio.
 6. Activa la **verificación en dos pasos** en la cuenta de GitHub que quede como dueña.
 
-## 3.4 Estructura
+## 3.4 Cambiar la dirección del sitio
+
+La dirección es `https://USUARIO.github.io/REPOSITORIO/`.
+
+| Opción | Resultado | Cómo |
+|---|---|---|
+| **Organización con el nombre del negocio** (gratis) | `https://ferreteria-cauca.github.io/catalogo/` | En GitHub: **+ → New organization → Free**, con el nombre del negocio. En el repositorio: **Settings → General → Danger Zone → Transfer ownership** → la organización. |
+| **Sin la parte final** | `https://ferreteria-cauca.github.io/` | Renombra el repositorio exactamente a `ferreteria-cauca.github.io` (**Settings → General → Repository name**). |
+| **Solo cambiar la parte final** | `https://leyderceronm.github.io/catalogo/` | Renombra el repositorio (**Settings → General → Repository name**). |
+| **Dominio propio** (de pago, ~USD 10–15 al año) | `https://www.ferreteriacauca.com` | Compra el dominio. En su DNS crea un registro **CNAME** `www` → `USUARIO.github.io`. En **Settings → Pages → Custom domain** escribe `www.ferreteriacauca.com` → Save, y marca **Enforce HTTPS** cuando aparezca. |
+| Cambiar el nombre de tu cuenta | Afecta **todos** tus repositorios y enlaces | **Settings → Account → Change username**. No recomendado. |
+
+**Antes de cambiarla:**
+- **Publica todos los cambios pendientes** en el panel. Lo que no se ha publicado, la conexión con GitHub y las sesiones quedan guardados en el navegador **para la dirección anterior**.
+- La dirección anterior **deja de funcionar**: GitHub no redirige los sitios de Pages al renombrar o transferir, salvo que agregues un dominio propio.
+
+**Después de cambiarla:**
+1. En el panel nuevo: **Publicar → Conexión con GitHub**. Revisa el usuario (o la organización) y el repositorio, y vuelve a pegar el token. Si transferiste el repositorio a una organización, **crea un token nuevo** con esa organización como *Resource owner*.
+2. Quien tenga la app instalada debe abrir la dirección nueva, volver a instalarla y **Descargar catálogo** otra vez.
+3. Comparte el enlace nuevo y actualízalo al inicio de este README.
+4. Con dominio propio, GitHub agrega al repositorio un archivo `CNAME`; no lo borres.
+
+## 3.5 Estructura
 
 ```
 index.html             Catálogo público
@@ -318,7 +340,7 @@ media/img, media/video Imágenes y videos subidos desde el panel
 icons/                 Íconos de la app
 ```
 
-## 3.5 Cómo funciona por dentro
+## 3.6 Cómo funciona por dentro
 
 **Datos.** `data/catalogo.json` contiene `ajustes`, `categorias` y `productos`. Cada producto tiene `id, ref, nombre, categoria, descripcion, etiquetas[], imagen, video, visible, destacado`. El panel trabaja sobre un **borrador** en IndexedDB (`catalogo-db`: `kv` para el borrador y `media` para los archivos subidos). `index.html?preview=1` muestra ese borrador.
 
@@ -337,17 +359,17 @@ icons/                 Íconos de la app
 
 **Contraseña.** PBKDF2-SHA256 con 150 000 iteraciones y una sal aleatoria (Web Crypto). `config.js` guarda el usuario, la sal y la huella.
 
-## 3.6 Seguridad
+## 3.7 Seguridad
 
 - No hay servidor: la contraseña se verifica en el navegador. Como el repositorio es público, solo se publica la huella cifrada. Usa contraseñas largas y únicas.
 - El panel **no puede cambiar lo que ven los clientes** sin un token de GitHub válido. La protección real es la cuenta de GitHub y el token (de alcance mínimo y con vencimiento).
 - El token se guarda en el `localStorage` del dispositivo del administrador; nunca va al repositorio.
 
-## 3.7 Actualizar la app
+## 3.8 Actualizar la app
 
 Los cambios de HTML, CSS o JS llegan a los usuarios en su **siguiente visita**. Si cambias muchos archivos, sube `VERSION` en [`sw.js`](sw.js) para forzar que todos los dispositivos renueven la caché. Si agregas archivos a la app, inclúyelos en `ARCHIVOS_APP`.
 
-## 3.8 Limitaciones
+## 3.9 Limitaciones
 
 - Los cambios no se sincronizan entre dispositivos del administrador: lo que no se ha publicado vive en un solo navegador. Para que varias personas editen a la vez en tiempo real haría falta un servidor (por ejemplo Firebase o Supabase).
 - Los videos de YouTube no funcionan sin internet.
