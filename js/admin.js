@@ -95,7 +95,7 @@
   async function entrar() {
     $('#vista-login').hidden = true;
     $('#vista-panel').hidden = false;
-    try { publicado = await Datos.cargarPublicado(); } catch (e) { publicado = null; }
+    publicado = await cargarPublicadoReal();
     cat = await Datos.cargarBorrador();
     if (!cat) {
       cat = publicado ? JSON.parse(JSON.stringify(publicado)) : Datos.normalizar({});
@@ -107,6 +107,17 @@
     pintarConexion();
     limpiarMediaPublicada().catch(() => {});
     setInterval(() => { if (!sesionValida()) cerrarSesion(); }, 60000);
+  }
+
+  // Lo publicado de verdad: si hay conexión con GitHub se lee del repositorio
+  // (así el estado es correcto aunque el panel se use desde localhost);
+  // si no, el catalogo.json del sitio donde está abierto el panel.
+  async function cargarPublicadoReal() {
+    const c = GitHub.leerConexion();
+    if (GitHub.configurada(c) && navigator.onLine) {
+      try { return Datos.normalizar(await GitHub.leerPublicado(c)); } catch (e) { /* usar el del sitio */ }
+    }
+    try { return await Datos.cargarPublicado(); } catch (e) { return null; }
   }
 
   function asegurarCategorias() {
@@ -498,10 +509,12 @@
   async function limpiarMediaPublicada() {
     const lista = await leerMediaPublicada();
     if (!lista.length || !navigator.onLine) return;
+    const c = GitHub.leerConexion();
+    const base = GitHub.configurada(c) ? GitHub.urlSitio(c) : location.href;
     const quedan = [];
     for (const ruta of lista) {
       try {
-        const res = await fetch(ruta, { method: 'HEAD', cache: 'no-store' });
+        const res = await fetch(new URL(ruta, base).href, { method: 'HEAD', cache: 'no-store' });
         if (res.ok) { await Datos.borrarMedia(ruta); continue; }
       } catch (e) { /* sin conexión: se intenta otro día */ }
       quedan.push(ruta);
@@ -602,6 +615,8 @@
       GitHub.guardarConexion(c);
       $('#gh-estado').innerHTML = '<span class="ok">✓ Conexión correcta. Ya puedes publicar.</span>';
       pintarConexion();
+      publicado = await cargarPublicadoReal();
+      pintarEstado();
     } catch (err) {
       $('#gh-estado').textContent = '✗ ' + err.message;
     }
@@ -637,7 +652,7 @@
       pintarEstadisticas();
       $('#gh-txt').textContent = '✓ Publicado en GitHub.';
       $('#gh-estado').textContent = 'GitHub Pages está actualizando el sitio (suele tardar 1–2 minutos)…';
-      esperarDespliegue(publicado.version);
+      esperarDespliegue(publicado.version, c);
     } catch (err) {
       console.error(err);
       $('#gh-txt').textContent = '✗ No se pudo publicar.';
@@ -647,20 +662,33 @@
     btn.disabled = false;
   }
 
-  // Consulta el sitio hasta que el catálogo nuevo esté visible (máx. ~5 min)
-  async function esperarDespliegue(version) {
+  // Consulta el sitio público de GitHub Pages hasta que muestre la versión nueva (máx. ~5 min)
+  async function esperarDespliegue(version, c) {
+    const sitio = GitHub.urlSitio(c);
+    const enlace = `<a href="${esc(sitio)}" target="_blank" rel="noopener">${esc(sitio)}</a>`;
+    const notaLocal = GitHub.panelEnSitio(c) ? '' :
+      '<br><small>Estás usando el panel desde otra dirección (por ejemplo <code>localhost</code>): esa copia no cambia. Tus clientes usan el enlace de arriba.</small>';
+    const estado = $('#gh-estado');
     for (let i = 0; i < 30; i++) {
-      await new Promise(r => setTimeout(r, 10000));
+      await new Promise(r => setTimeout(r, i === 0 ? 4000 : 10000));
       try {
-        const res = await fetch(Datos.URL_CATALOGO + '?v=' + Date.now(), { cache: 'no-store' });
-        if (res.ok && (await res.json()).version >= version) {
-          $('#gh-estado').innerHTML = '<span class="ok">✓ Tus clientes ya ven los cambios.</span>';
+        const v = await GitHub.versionEnSitio(c);
+        if (v === null) {
+          const ajustes = `https://github.com/${encodeURIComponent(c.owner)}/${encodeURIComponent(c.repo)}/settings/pages`;
+          estado.innerHTML = `Los cambios ya están guardados en GitHub, pero <strong>tu sitio público no existe todavía</strong> (${enlace} da error 404).` +
+            ` Activa GitHub Pages en <a href="${ajustes}" target="_blank" rel="noopener">Settings → Pages</a>: ` +
+            `<em>Deploy from a branch</em> → rama <code>${esc(c.rama)}</code> / <code>(root)</code> → Save. Seguiré revisando…`;
+          continue;
+        }
+        if (v >= version) {
+          estado.innerHTML = `<span class="ok">✓ Tus clientes ya ven los cambios en ${enlace}</span>${notaLocal}`;
           limpiarMediaPublicada().catch(() => {});
           return;
         }
-      } catch (e) { /* seguir esperando */ }
+        estado.innerHTML = `GitHub Pages está actualizando ${enlace} (suele tardar 1–2 minutos)…`;
+      } catch (e) { /* sin conexión momentánea: seguir esperando */ }
     }
-    $('#gh-estado').textContent = 'Los cambios están en GitHub; el sitio puede tardar unos minutos más en mostrarlos.';
+    estado.innerHTML = `Los cambios están guardados en GitHub; ${enlace} puede tardar unos minutos más en mostrarlos.${notaLocal}`;
   }
 
   async function importarJSON(archivo) {

@@ -128,5 +128,45 @@
     }
   }
 
-  window.GitHub = { leerConexion, guardarConexion, olvidarToken, configurada, probar, publicar };
+  // Dirección pública del sitio en GitHub Pages (https://usuario.github.io/repositorio/)
+  function urlSitio(c) {
+    if (location.hostname.endsWith('.github.io')) return new URL('.', location.href).href;
+    const usuario = c.owner.toLowerCase();
+    const raiz = c.repo.toLowerCase() === usuario + '.github.io';
+    return `https://${usuario}.github.io/${raiz ? '' : encodeURIComponent(c.repo) + '/'}`;
+  }
+
+  // ¿El panel se está usando desde el mismo sitio publicado? (no desde localhost u otro)
+  const panelEnSitio = (c) => new URL(urlSitio(c)).origin === location.origin;
+
+  // Catálogo que está guardado en GitHub (lo último publicado), sin pasar por cachés
+  async function leerPublicado(c) {
+    const res = await fetch(rutaRepo(c, `/contents/data/catalogo.json?ref=${rama(c)}`), {
+      cache: 'no-store',
+      headers: {
+        Authorization: 'Bearer ' + c.token,
+        Accept: 'application/vnd.github.raw+json',
+        'X-GitHub-Api-Version': '2022-11-28'
+      }
+    });
+    if (!res.ok) throw errorAmigable(res.status, '');
+    return res.json();
+  }
+
+  // Versión del catálogo que ve el público en GitHub Pages; null si GitHub Pages no está activado.
+  // (Un sitio de Pages inexistente responde 404 sin cabeceras CORS: el navegador lo
+  // reporta como error de red, así que se confirma con el dato has_pages del repositorio.)
+  async function versionEnSitio(c) {
+    let res = null;
+    try { res = await fetch(urlSitio(c) + 'data/catalogo.json?v=' + Date.now(), { cache: 'no-store' }); } catch (e) { /* ver abajo */ }
+    if (res && res.ok) return (await res.json()).version || 0;
+    const repo = await api(c, 'GET', '');
+    if (!repo.has_pages) return null;
+    throw new Error('El sitio todavía no responde');   // activado pero aún publicándose
+  }
+
+  window.GitHub = {
+    leerConexion, guardarConexion, olvidarToken, configurada, probar, publicar,
+    urlSitio, panelEnSitio, leerPublicado, versionEnSitio
+  };
 })();
