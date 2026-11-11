@@ -133,7 +133,7 @@ Cuando no hay internet aparece arriba el aviso *"Sin conexión — estás viendo
 
 ## 2.1 Entrar al panel
 
-Abre `https://…/admin.html` (el panel no aparece enlazado en el catálogo, así que los clientes no lo ven) e ingresa tu **usuario** y **contraseña**.
+En el catálogo toca el ícono de **persona** (arriba, junto al **⋮**), o abre directamente `https://…/admin.html`, e ingresa tu **usuario** y **contraseña**.
 
 - La sesión dura **2 horas**. Después vuelve a pedir la contraseña.
 - Después de **5 intentos fallidos** el ingreso se bloquea **5 minutos** en ese dispositivo.
